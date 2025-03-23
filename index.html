@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lagar & Säkerhet</title>
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.svg">
+    <link rel="stylesheet" href="css/main.min.css">
+    <script defer src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script defer src="js/script.js"></script>
+  </head>
+  
+  <body class="bg-dark text-light">
+    <div id="blob"></div>
+    <div id="blob-blur"></div>
+
+    <!-- scroll to top button -->
+    <button onclick="scrollToTop()" id="exit-button" class="fade btn btn-dark rounded-3 px-2 pb-2">
+      <img class="w-100 h-100" src="assets/icons/up_arrow.svg" alt="Gå längst upp">
+    </button>
+
+    <header class="container-fluid px-3 p-sm-4 p-md-5 py-5">
+        <!-- större skärm -->
+        <div class="d-none d-md-block container-xl mt-5 p-0">
+          <h1 class="display-1">Lagar & säkerhet</h1>
+          <div class="row m-0 p-0">
+              <h1 class="col-auto display-1 p-0 me-md-2 me-lg-4 mb-4 mb-md-0">på nätet.</h1>
+              <a href="html/quiz.html" class="col-auto btn btn-primary rounded-4 rounded-5 d-flex justify-content-center align-items-center">
+                <div class="font-bungee text-dark h1 m-0 px-5 py-2 py-md-0">SPELA QUIZ</div> 
+              </a>
+          </div>
+        </div>
+        <!-- mobil -->
+        <div class="d-block d-md-none container-xl mt-5 p-0">
+          <h1 class="display-1">Lagar & säkerhet på nätet</h1>
+          <a href="html/quiz.html" class="col-sm-12 col-md-auto btn btn-primary rounded-4 d-flex justify-content-center align-items-center">
+            <div class="font-bungee text-dark h1 m-0 px-5 py-2 py-md-0">SPELA QUIZ</div> 
+          </a>
+        </div>
+    </header>
+
+    <!-- semi circle -->
+    <div class="container-fluid m-0 p-0 d-flex justify-content-center">
+      <div class="semi-circle container-xl p-0 m-0">
+        <img src="assets/icons/semi_circle_light.svg" alt="">
+      </div>
+    </div>
+
+    <!-- navigation -->
+    <nav class="container-fluid bg-secondary px-3 p-sm-4 p-md-5 pt-md-4">
+      <div class="container-xl bg-dark m-auto p-4 px-md-5 rounded-4 flex-wrap d-flex gap-4 justify-content-between">
+        <a href="index.html" class="h4 m-0 fw-bold underline">Hem</a>
+        <a href="html/integritet.html" class="h4 m-0 fw-bold">Integritet</a>
+        <a href="html/lagar.html" class="h4 m-0 fw-bold">Lagar</a>
+        <a href="html/losenord.html" class="h4 m-0 fw-bold">Lösenord</a>
+        <a href="html/webbhotell.html" class="h4 m-0 fw-bold">Webbhotell</a>
+        <a href="html/tredjepartskod.html" class="h4 m-0 fw-bold">Tredjepartskod</a>
+        <a href="html/sakerhetshot.html" class="h4 m-0 fw-bold">Säkerhetshot</a>
+      </div>
+    </nav>
+    
+    <!-- page thumbnails -->
+    <section class="thumbnails container-fluid bg-secondary px-3 p-sm-4 p-md-5 py-4">
+      <div class="container-xl m-auto row m-0 gap-0 p-0">
+        <!-- left column -->
+        <div id="left-col" class="col-md-6 pe-md-3 px-0">
+          <a href="html/integritet.html" class="col m-0">
+            <picture class="row m-0">
+              <source media="(min-width: 1200px)" srcset="assets/images/cameras_lg.jpg">
+              <source media="(min-width: 768px)" srcset="assets/images/cameras_sm.jpg">
+              <source media="(min-width: 400px)" srcset="assets/images/cameras_lg.jpg">
+              <img class="p-0 rounded-4" src="assets/images/cameras_sm.jpg" alt="Säkerhetskameror">
+            </picture>
+            <p class="row m-0 mt-3 mb-5">
+              Var går egentligen gränsen mellan vår integritet och statlig kontroll online?
+            </p>
+          </a>
+
+          <a href="html/losenord.html" class="col m-0">
+            <picture class="row m-0">
+              <source media="(min-width: 1200px)" srcset="assets/images/safe_lg.jpg">
+              <source media="(min-width: 768px)" srcset="assets/images/safe_sm.jpg">
+              <source media="(min-width: 400px)" srcset="assets/images/safe_lg.jpg">
+              <img class="p-0 rounded-4" src="assets/images/safe_sm.jpg" alt="Kassaskåp">
+            </picture>
+            <p class="row m-0 mt-3 mb-5">
+              Ett bra lösenord är väsentligt för att hålla sin information säker. 
+              Men hur starkt bör ett lösenord faktiskt vara?
+            </p>
+          </a>
+
+          <a href="html/tredjepartskod.html" class="col m-0">
+            <picture class="row m-0">
+              <source media="(min-width: 1200px)" srcset="assets/images/computer_lg.jpg">
+              <source media="(min-width: 768px)" srcset="assets/images/computer_sm.jpg">
+              <source media="(min-width: 400px)" srcset="assets/images/computer_lg.jpg">
+              <img class="p-0 rounded-4" src="assets/images/computer_sm.jpg" alt="Någon som pekar på en datorskärm">
+            </picture>
+            <p class="row m-0 mt-3 mb-5">
+              Det kan vara frestande att använda tredjepartskod för att påskynda utvecklingen av exempelvis hemsidor.
+              Läs mer om varför du borde vara extra försiktig när du använder någon annans kod.
+            </p>
+          </a>
+        </div>
+
+        <!-- right column -->
+        <div id="right-col" class="col-md-6 ps-md-3 px-0">
+          <a href="html/lagar.html" class="col m-0">
+            <picture class="row m-0">
+              <source media="(min-width: 1200px)" srcset="assets/images/books_lg.jpg">
+              <source media="(min-width: 768px)" srcset="assets/images/books_sm.jpg">
+              <source media="(min-width: 400px)" srcset="assets/images/books_lg.jpg">
+              <img class="p-0 rounded-4" src="assets/images/books_sm.jpg" alt="Några böcker">
+            </picture>
+            <p class="row m-0 mt-3 mb-5">
+              Lagar kring vad vi får och inte får göra på nätet.
+            </p>
+          </a>
+
+          <a href="html/webbhotell.html" class="col m-0">
+            <picture class="row m-0">
+              <source media="(min-width: 1200px)" srcset="assets/images/dog_lg.jpg">
+              <source media="(min-width: 768px)" srcset="assets/images/dog_sm.jpg">
+              <source media="(min-width: 400px)" srcset="assets/images/dog_lg.jpg">
+              <img class="p-0 rounded-4" src="assets/images/dog_sm.jpg" alt="En hund som sitter framför en iPad">
+            </picture>
+            <p class="row m-0 mt-3 mb-5">
+              Vad är ett webbhotell och vilket borde du välja?
+            </p>
+          </a>
+
+          <a href="html/sakerhetshot.html" class="col m-0">
+            <picture class="row m-0">
+              <source media="(min-width: 1200px)" srcset="assets/images/fishing_lg.jpg">
+              <source media="(min-width: 768px)" srcset="assets/images/fishing_sm.jpg">
+              <source media="(min-width: 400px)" srcset="assets/images/fishing_lg.jpg">
+              <img class="p-0 rounded-4" src="assets/images/fishing_sm.jpg" alt="Några människor som sitter och fiskar">
+            </picture>
+            <p class="row m-0 mt-3 mb-0">
+              Phishing är en vanlig metod för att stjäla viktig data. 
+              Det är viktigt att kunna skilja på autenciteten av olika hemsidor.
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- semi circle -->
+    <div class="container-fluid m-0 p-0 d-flex justify-content-center">
+      <div class="semi-circle container-xl p-0 m-0">
+        <img class="h-100 m-0 p-0" src="assets/icons/semi_circle_light.svg" style="transform: scaleY(-1);" alt="">
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="container-fluid px-3 p-sm-4 p-md-5 py-5">
+      <div class="container-xl mb-5 p-0">
+        <h1 class="display-4 text-start mb-3 mb-md-4 mb-lg-5 mt-4">Hur bra koll har du  på säkerhet på nätet?</h1>
+        <a href="html/quiz.html" class="btn btn-primary rounded-4 d-flex justify-content-center align-items-center">
+          <div class="font-bungee text-dark h1 m-0 px-3 py-3 py-lg-4">TESTA DIN KUNSKAP MED VÅRT QUIZ!</div> 
+        </a>
+        <div class="row d-flex justify-content-between m-0 mt-3 mt-md-4 mt-lg-5 p-0">
+          <a href="index.html" class="home-button col-12 col-md-auto btn btn-primary rounded-4 p-3 d-flex justify-content-center align-items-center">
+            <img class="w-100 h-100" src="assets/icons/home.svg" alt="Hem">
+          </a>
+          <p class="col-12 col-md-auto m-0 p-0 text-end pt-2 pt-sm-0">Den här hemsidan är skapad av<br><b>Arvid Renestam</b></p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- lägg y-position på kolumnerna vid vertikalt skroll -->
+    <script>
+      window.addEventListener("scroll", function() {
+        if (window.innerWidth < 768) return;
+
+        let rightCol = document.getElementById("right-col");
+        let leftCol = document.getElementById("left-col");
+        
+        let scroll = this.scrollY;
+        // jag lade först till lite marginTop men det blev väldigt laggit
+        // insåg senare att det var för att den bevhöde rita om hela style-layouten typ
+        // problemet fixades med transform istället
+        leftCol.animate({
+          transform: "translate(0, " + -scroll*0.07 + "px)"
+        }, {duration: 1200, fill: "forwards"});
+        rightCol.animate({
+          transform: "translate(0, " + scroll*0.07 + "px)"
+        }, {duration: 1200, fill: "forwards"});
+      });
+    </script>
+  </body>
+</html>

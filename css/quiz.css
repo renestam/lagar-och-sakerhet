@@ -1,0 +1,78 @@
+body {
+    width: 100dvh;
+    min-height: 100dvh;
+}
+
+.question {
+    max-width: 800px;
+    display: none;  
+    visibility: hidden;
+    opacity: 0;
+    animation-name: question-fade;
+    animation-duration: .5s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+/* countdown text */
+#countdown-div {
+    position: fixed;
+    top: 35vh;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    display: none;
+    visibility: hidden;
+}
+#countdown-text {
+    display: none;
+    visibility: hidden;
+    font-size: 18vh;
+    opacity: 1;
+    animation-name: text-transition;
+    animation-duration: .75s;
+    animation-iteration-count: 4;
+    animation-fill-mode: forwards;
+}
+
+.next-question {
+    visibility: hidden;
+}
+
+#exit-button {
+    display: block !important;
+}
+
+@keyframes text-transition {
+    0% {font-size:18vh; opacity:0;}
+    50% {font-size:20vh; opacity:1;}
+    100% {font-size:18vh; opacity:0;}
+}
+
+@keyframes question-fade {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.question-selected {
+    border: solid 3px #DFDFDF;
+}
+.question-selected:hover {
+    border: solid 3px #DFDFDF;
+}
+
+h1 {
+    max-width: 100% !important;
+}
+
+button {
+    font-size: 1.2rem !important;
+}
+
+@media only screen and (min-width: 600px) {
+    button {
+        font-size: 1.6rem !important;
+    }
+}

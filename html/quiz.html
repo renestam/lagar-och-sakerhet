@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lagar & Säkerhet</title>
+    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.svg">
+    <link rel="stylesheet" href="../css/main.min.css">
+    <script defer src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/quiz.css">
+    <script defer src="../js/script.js"></script>
+    <script defer src="../js/quiz.js"></script>
+  </head> 
+  
+  <body onload="start()" class="container-fluid bg-dark text-light px-3 p-sm-4 p-md-5 py-5 d-flex justify-content-center align-items-center">
+    <div id="blob"></div>
+    <div id="blob-blur"></div>
+
+    <!-- exit button -->
+    <a href="../index.html" id="exit-button" class="fade btn btn-secondary rounded-3 px-2 pb-2">
+      <img class="w-100 h-100" src="../assets/icons/cross.svg" alt="Tillbaka till startsidan">
+    </a>
+
+    <!-- countdown -->
+    <div id="countdown-div">
+      <div id="countdown-text" class="font-bungee text-center w-auto h-auto">3</div>
+    </div>
+
+    <!-- questions -->
+    <div class="question">
+      <h1 class="display-2 text-center mb-4">1</h1>
+      <h2 class="h1 mb-4">Användare har alltid rätt att få sin personliga data raderad</h2>
+      <button class="btn btn-secondary w-100 px-3 py-4 mb-3 rounded-4 h5" onclick="answer(0)">
+        Ja, det stämmer
+      </button>
+      <button class="btn btn-secondary w-100 px-3 py-4 mb-3 rounded-4 h5" onclick="answer(1)">
+        Nej, företaget får själva bestämma vad de gör med datan
+      </button>
+      <button class="btn btn-secondary w-100 px-3 py-4 mb-5 rounded-4 h5" onclick="answer(2)">
+        Det beror på vilken data det berör
+      </button>
+      <button class="next-question btn btn-secondary w-100 px-3 py-4 rounded-4 h5" onclick="nextQuestion()">
+        Nästa fråga
+      </button>
+    </div>
+
+    <div class="question">
+      <h1 class="display-2 text-center mb-4">2</h1>
+      <h2 class="h1 mb-4">Ett SSL-certifikat ...</h2>
+      <button class="btn btn-secondary w-100 px-3 py-4 mb-3 rounded-4 h5" onclick="answer(0)">
+        Avlastar utvecklare från underhållsuppgifter
+      </button>
+      <button class="btn btn-secondary w-100 px-3 py-4 mb-3 rounded-4 h5" onclick="answer(1)">
+        Ger militären rätt till användning av högteknologiska stridsdrönare
+      </button>
+      <button class="btn btn-secondary w-100 px-3 py-4 mb-5 rounded-4 h5" onclick="answer(2)">
+        Säkerställer krypterad kommunikation
+      </button>
+      <button class="next-question btn btn-secondary w-100 px-3 py-4 rounded-4 h5" onclick="nextQuestion()">
+        Nästa fråga
+      </button>
+    </div>
+
+    <div class="question">
+      <h1 class="display-2 text-center mb-4">3</h1>
+      <h2 class="h1 mb-4">Vad är saltning?</h2>
+      <button class="btn btn-secondary w-100 px-3 py-4 mb-3 rounded-4 h5" onclick="answer(0)">
+        Slumpmässig data läggs till innan hashning processen för att öka komplexiteten i skapandet av hashade lösenord.
+      </button>
+      <button class="btn btn-secondary w-100 px-3 py-4 mb-3 rounded-4 h5" onclick="answer(1)">
+        En teknik som används för att konvertera data till en kortare representation.
+      </button>
+      <button class="btn btn-secondary w-100 px-3 py-4 mb-5 rounded-4 h5" onclick="answer(2)">
+        Nedladdning av programvaror och filer från pålitliga källor för att förhindra exponering för skadlig kod.
+      </button>
+      <button class="next-question btn btn-secondary w-100 px-3 py-4 rounded-4 h5" onclick="nextQuestion()">
+        Nästa fråga
+      </button>
+    </div>
+
+    <div class="question">
+      <h1 class="display-2 text-center mb-4">4</h1>
+      <h2 class="h1 mb-4">Regelbunden uppdatering av antivirus-, antimalware- och säkerhetsprogramvara är ...</h2>
+      <button class="btn btn-secondary w-100 px-3 py-4 mb-3 rounded-4 h5" onclick="answer(0)">
+        Din grannes dagliga trädgårdsrutin
+      </button>
+      <button class="btn btn-secondary w-100 px-3 py-4 mb-3 rounded-4 h5" onclick="answer(1)">
+        Avgörande för att förhindra och identifiera hot på nätet
+      </button>
+      <button class="btn btn-secondary w-100 px-3 py-4 mb-5 rounded-4 h5" onclick="answer(2)">
+        Bedrägliga försök att lura människor att avslöja personlig information
+      </button>
+      <button class="next-question btn btn-secondary w-100 px-3 py-4 rounded-4 h5" onclick="nextQuestion()">
+        Nästa fråga
+      </button>
+    </div>
+
+    <div class="question">
+      <h1 class="display-2 text-center mb-4">5</h1>
+      <h2 class="h1 mb-4">Angripare som skapar trovärdiga webbsidor för att lura användare att lämna ut känslig information är ett exempel på ...</h2>
+      <button class="btn btn-secondary w-100 px-3 py-4 mb-3 rounded-4 h5" onclick="answer(0)">
+        GDPR
+      </button>
+      <button class="btn btn-secondary w-100 px-3 py-4 mb-3 rounded-4 h5" onclick="answer(1)">
+        Phishing
+      </button>
+      <button class="btn btn-secondary w-100 px-3 py-4 mb-5 rounded-4 h5" onclick="answer(2)">
+        Nedladdning av programvaror och filer från pålitliga källor för att förhindra exponering för skadlig kod.
+      </button>
+      <button class="next-question btn btn-secondary w-100 px-3 py-4 rounded-4 h5" onclick="nextQuestion()">
+        Nästa fråga
+      </button>
+    </div>
+
+    <div class="question">
+      <h1 class="display-2 text-center mb-4">6</h1>
+      <h2 class="h1 mb-4">Varför kan tredjepartskod vara farligt?</h2>
+      <button class="btn btn-secondary w-100 px-3 py-4 mb-3 rounded-4 h5" onclick="answer(0)">
+        Den kan vara en ingångspunkt för cyberattacker och dataläckor om den inte säkerställs eller hanteras på rätt sätt.
+      </button>
+      <button class="btn btn-secondary w-100 px-3 py-4 mb-3 rounded-4 h5" onclick="answer(1)">
+        Den kan begränsa och till och med förbjuda tillgång till olika webbplatser
+      </button>
+      <button class="btn btn-secondary w-100 px-3 py-4 mb-5 rounded-4 h5" onclick="answer(2)">
+        Den kräver regelbunden uppdatering och support
+      </button>
+      <button class="next-question btn btn-secondary w-100 px-3 py-4 rounded-4 h5" onclick="nextQuestion()">
+        Nästa fråga
+      </button>
+    </div>
+
+    <div class="question">
+      <h1 class="display-2 text-center mb-4">7</h1>
+      <h2 class="h1 mb-4">Vad kan vara bra att använda för säker surfning och nedladdning av program?</h2>
+      <button class="btn btn-secondary w-100 px-3 py-4 mb-3 rounded-4 h5" onclick="answer(0)">
+        Webbhotell
+      </button>
+      <button class="btn btn-secondary w-100 px-3 py-4 mb-3 rounded-4 h5" onclick="answer(1)">
+        VPN-tjänster
+      </button>
+      <button class="btn btn-secondary w-100 px-3 py-4 mb-5 rounded-4 h5" onclick="answer(2)">
+        Nedladdning av programvaror och filer från pålitliga källor för att förhindra exponering för skadlig kod.
+      </button>
+      <button class="next-question btn btn-secondary w-100 px-3 py-4 rounded-4 h5" onclick="nextQuestion()">
+        Nästa fråga
+      </button>
+    </div>
+
+    <div class="question">
+      <h1 class="display-2 text-center mb-4">8</h1>
+      <h2 class="h1 mb-4">GDPR står för ...</h2>
+      <button class="btn btn-secondary w-100 px-3 py-4 mb-3 rounded-4 h5" onclick="answer(0)">
+        Generic Data Process Reduction
+      </button>
+      <button class="btn btn-secondary w-100 px-3 py-4 mb-3 rounded-4 h5" onclick="answer(1)">
+        Graphical Data Possession Restriction
+      </button>
+      <button class="btn btn-secondary w-100 px-3 py-4 mb-5 rounded-4 h5" onclick="answer(2)">
+        General Data Protection Regulation
+      </button>
+      <button class="next-question btn btn-secondary w-100 px-3 py-4 rounded-4 h5" onclick="nextQuestion()">
+        Nästa fråga
+      </button>
+    </div>
+
+    <div class="question">
+      <h1 class="display-2 text-center mb-4">9</h1>
+      <h2 class="h1 mb-4">Hur undviker du skadlig programvara?</h2>
+      <button class="btn btn-secondary w-100 px-3 py-4 mb-3 rounded-4 h5" onclick="answer(0)">
+        Ladda endast ned program från betrodda källor
+      </button>
+      <button class="btn btn-secondary w-100 px-3 py-4 mb-3 rounded-4 h5" onclick="answer(1)">
+        Hämta endast program och filer från regeringens hemsida
+      </button>
+      <button class="btn btn-secondary w-100 px-3 py-4 mb-5 rounded-4 h5" onclick="answer(2)">
+        Uppdatara regelbundet din antimalware-programvara
+      </button>
+      <button class="next-question btn btn-secondary w-100 px-3 py-4 rounded-4 h5" onclick="nextQuestion()">
+        Nästa fråga
+      </button>
+    </div>
+
+    <div class="question">
+      <h1 class="display-2 text-center mb-4">10!</h1>
+      <h2 class="h1 mb-4">Varför ska vi bry oss om säkerhet på nätet?</h2>
+      <button class="btn btn-secondary w-100 px-3 py-4 mb-3 rounded-4 h5" onclick="answer(0)">
+        För att det är viktigt
+      </button>
+      <button class="btn btn-secondary w-100 px-3 py-4 mb-3 rounded-4 h5" onclick="answer(1)">
+        Eftersom de många skadliga aktörerna ute på nätet har i åtanke att stjäla vår inkompetens
+      </button>
+      <button class="btn btn-secondary w-100 px-3 py-4 mb-5 rounded-4 h5" onclick="answer(2)">
+        På grund av de akuta kärnvapenhoten i din trädgård
+      </button>
+      <a class="next-question btn btn-secondary w-100 px-3 py-4 rounded-4 h5" href="../index.html">
+        Tillbaka till startsidan
+      </a>
+    </div>
+  </body>
+</html>
