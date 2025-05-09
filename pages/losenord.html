@@ -1,229 +1,263 @@
 <!doctype html>
 <html lang="sv">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lagar & Säkerhet</title>
-    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.svg">
-    <link rel="stylesheet" href="../styles/main.min.css">
-    <script defer src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="../styles/style.css">
-    <script defer src="../scripts/script.js"></script>
-  </head>
 
-  <body class="bg-secondary text-light">
-    <div id="blob"></div>
-    <div id="blob-blur"></div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lagar & Säkerhet</title>
+  <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.svg">
+  <link rel="stylesheet" href="../styles/main.min.css">
+  <script defer src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="../styles/style.css">
+  <script defer src="../scripts/script.js"></script>
+</head>
 
-    <!-- scroll to top button -->
-    <button onclick="scrollToTop()" id="exit-button" class="fade btn btn-secondary rounded-3 px-2 pb-2">
-      <img class="w-100 h-100" src="../assets/icons/up_arrow.svg" alt="Gå längst upp">
-    </button>
+<body class="bg-secondary text-light">
+  <div id="blob"></div>
+  <div id="blob-blur"></div>
 
-     <!-- navigation -->
-     <nav class="container-fluid px-3 px-sm-4 px-md-5 py-3">
-      <div class="container-xl bg-dark m-auto p-4 px-md-5 rounded-4 flex-wrap d-flex gap-4 justify-content-between">
-        <a href="../index.html" class="h4 m-0 fw-bold">Hem</a>
-        <a href="integritet.html" class="h4 m-0 fw-bold">Integritet</a>
-        <a href="lagar.html" class="h4 m-0 fw-bold">Lagar</a>
-        <a href="losenord.html" class="h4 m-0 fw-bold underline">Lösenord</a>
-        <a href="webbhotell.html" class="h4 m-0 fw-bold">Webbhotell</a>
-        <a href="tredjepartskod.html" class="h4 m-0 fw-bold">Tredjepartskod</a>
-        <a href="sakerhetshot.html" class="h4 m-0 fw-bold">Säkerhetshot</a>
-      </div>
-    </nav>
+  <!-- scroll to top button -->
+  <button onclick="scrollToTop()" id="exit-button" class="fade btn btn-secondary rounded-3 px-2 pb-2">
+    <img class="w-100 h-100" src="../assets/icons/up_arrow.svg" alt="Gå längst upp">
+  </button>
 
-    <header class="container-fluid px-3 px-sm-4 px-md-5 pt-5 pb-4 pb-xl-5 m-0">
-        <div class="container-xl m-auto p-0">
-          <h1 class="display-1 p-0 m-0">Lösenord och säker lagring av data</h1>
+  <!-- navigation -->
+  <nav class="container-fluid px-3 px-sm-4 px-md-5 py-3">
+    <div class="container-xl bg-dark m-auto p-4 px-md-5 rounded-4 flex-wrap d-flex gap-4 justify-content-between">
+      <a href="../index.html" class="h4 m-0 fw-bold">Hem</a>
+      <a href="integritet.html" class="h4 m-0 fw-bold">Integritet</a>
+      <a href="lagar.html" class="h4 m-0 fw-bold">Lagar</a>
+      <a href="losenord.html" class="h4 m-0 fw-bold underline">Lösenord</a>
+      <a href="webbhotell.html" class="h4 m-0 fw-bold">Webbhotell</a>
+      <a href="tredjepartskod.html" class="h4 m-0 fw-bold">Tredjepartskod</a>
+      <a href="sakerhetshot.html" class="h4 m-0 fw-bold">Säkerhetshot</a>
+    </div>
+  </nav>
+
+  <header class="container-fluid px-3 px-sm-4 px-md-5 pt-5 pb-4 pb-xl-5 m-0">
+    <div class="container-xl m-auto p-0">
+      <h1 class="display-1 p-0 m-0">Lösenord och säker lagring av data</h1>
+    </div>
+  </header>
+
+  <!-- semi circle -->
+  <div class="container-fluid m-0 p-0 d-flex justify-content-center">
+    <div class="semi-circle container-xl p-0 m-0">
+      <img class="w-auto h-auto" src="../assets/icons/semi_circle_dark.svg" alt="">
+    </div>
+  </div>
+
+  <!-- Säkerhetsåtgärder för att skydda sig -->
+  <section class="container-fluid bg-dark px-3 px-sm-4 px-md-5 mb-0 pb-5 pt-2">
+    <div class="container-xl m-auto p-0 mb-5 pt-3">
+      <h3 class="display-4 m-0 pb-3 pb-md-4">Säkerhetsåtgärder för att skydda sig</h3>
+      <div class="row pb-5">
+        <div class="col-12 col-lg-4">
+          <picture class="row m-0">
+            <source media="(min-width: 768px)" srcset="../assets/images/download_sm.jpg">
+            <source media="(min-width: 500px)" srcset="../assets/images/download_lg.jpg">
+            <img class="p-0 rounded-4 mb-3" src="../assets/images/download_sm.jpg"
+              alt="En skärm som visar nedladdningshastighet.">
+          </picture>
+          <h4 class="pt-3 pb-2 m-0">Starka lösenord och tvåfaktors-autentisering</h4>
+          <p class="row m-0">
+            Användning av starka och unika lösenord kombinerat med tvåfaktors-autentisering ökar säkerheten för
+            användarkonton väsentligt.
+          </p>
         </div>
-    </header>
-
-    <!-- semi circle -->
-    <div class="container-fluid m-0 p-0 d-flex justify-content-center">
-      <div class="semi-circle container-xl p-0 m-0">
-        <img class="w-auto h-auto" src="../assets/icons/semi_circle_dark.svg" alt="">
+        <div class="col-12 col-lg-4">
+          <img class="row m-0 p-0 rounded-4 d-none d-lg-block mb-3 w-100" src="../assets/images/iphones.jpg"
+            alt="Två iPhones.">
+          <h4 class="pt-3 pb-2 m-0">Säker surfning och nedladdning av program</h4>
+          <p class="row m-0">
+            Undvik att besöka osäkra webbplatser och ladda endast ner programvaror och filer från pålitliga källor för
+            att förhindra exponering för skadlig kod.
+          </p>
+        </div>
+        <div class="col-12 col-lg-4">
+          <img class="row m-0 p-0 rounded-4 d-none d-lg-block mb-3 w-100" src="../assets/images/security.jpg"
+            alt="En kedja låser fast teknologi.">
+          <h4 class="pt-3 pb-2 m-0">Säkerhetsprogramvara och uppdateringar</h4>
+          <p class="row m-0">
+            Regelbunden uppdatering av antivirus-, antimalware- och säkerhetsprogramvara är avgörande för att förhindra
+            och identifiera hot på nätet.
+          </p>
+        </div>
       </div>
     </div>
-    
-    <!-- Säkerhetsåtgärder för att skydda sig -->
-    <section class="container-fluid bg-dark px-3 px-sm-4 px-md-5 mb-0 pb-5 pt-2">
-      <div class="container-xl m-auto p-0 mb-5 pt-3">
-        <h3 class="display-4 m-0 pb-3 pb-md-4">Säkerhetsåtgärder för att skydda sig</h3>
-        <div class="row pb-5">
-          <div class="col-12 col-lg-4">
-            <picture class="row m-0">
-              <source media="(min-width: 768px)" srcset="../assets/images/download_sm.jpg">
-              <source media="(min-width: 500px)" srcset="../assets/images/download_lg.jpg">
-              <img class="p-0 rounded-4 mb-3" src="../assets/images/download_sm.jpg" alt="En skärm som visar nedladdningshastighet.">
+
+    <!-- Starka lösenord och tvåfaktorsautentisering -->
+    <div class="container-xl p-0 m-auto two-columns mt-4 mb-5 pb-5">
+      <h3 class="h1 pb-2 negative-margin">Starka lösenord och tvåfaktorsautentisering</h3>
+      <p class="py-0 m-0">
+        Användning av unika lösenord för varje konto minskar risken för att flera konton komprometteras om ett lösenord
+        exponeras. Genom att lägga till ytterligare steg för att verifiera användarens identitet ger
+        tvåfaktorsautentisering ett extra lager av säkerhet vid inloggning. Användning av lösenordsförvaltare hjälper
+        användare att skapa, lagra och använda starka och unika lösenord för olika konton.</p>
+    </div>
+
+    <!-- Hur man implementerar säker lagring av lösenord -->
+    <div class="container-xl p-0 m-auto two-columns mt-4 pb-3">
+      <h3 class="h1 pb-2 negative-margin">Hur man implementerar säker lagring av lösenord</h3>
+      <p class="py-0 m-0">
+        Börja med att utvärdera och uppdatera databaskryptering för att säkerställa skydd av lösenordsdata. Inför en
+        tydlig lösenordspolicy för att reglera lösenordshantering och säkerställa bästa praxis hos användarna. Överväg
+        att använda flerfaktorautentisering för att öka säkerheten och skyddet för lösenordsåtkomst.
+      </p>
+    </div>
+  </section>
+
+  <div class="container-fluid bg-dark py-2 py-md-5 m-0">
+    <div class="w-25 bg-primary m-auto rounded-5 pt-1"></div>
+  </div>
+
+  <!-- Hashning -->
+  <section class="container-fluid bg-dark px-3 px-sm-4 px-md-5 pb-4 pb-md-5 pt-5">
+    <div class="container-xl p-0 m-auto">
+      <div class="container-xl p-0 m-auto two-columns mt-4 mb-5">
+        <h3 class="display-4 pb-2 negative-margin">Hashning</h3>
+        <p class="py-0 m-0 mb-5">
+          Hashning är en teknik som används för att konvertera data till en kortare representation, vanligtvis för att
+          säkerställa dataintegritet. Det involverar en hashfunktion som genererar en unik kodad sträng från en given
+          indata.
+      </div>
+
+      <!-- Varför använda salt vid hashning av lösenord? -->
+      <div class="p-0 m-0 pb-5">
+        <h2 class="h1 pb-5 m-0">Varför använda salt vid hashning av lösenord?</h2>
+        <div class="row p-0 m-0">
+          <div class="col-12 col-md-6 p-0 m-0 pe-md-2">
+            <h3 class="pt-3 pt-md-0">Förbättrar säkerheten</h3>
+            <p class="mb-md-5 p-0">
+              Saltning av lösenord förhindrar att samma lösenord alltid genererar samma hash och försvårar avkodning av
+              lösenorden av intrångsförsök.
+            </p>
+          </div>
+          <div class="col-12 col-md-6 p-0 m-0 ps-md-2 pb-3 pb-md-0">
+            <h3 class="pt-3 pt-md-0">Ökad motståndskraft</h3>
+            <p class="m-0 p-0">
+              Saltning försvårar användningen av förvalda eller förutbestämda tabeller för avkodning av hashade
+              lösenord, vilket ökar motståndet mot avkodningsförsök.
+            </p>
+          </div>
+        </div>
+        <div class="row p-0 m-0 flex-md-row-reverse">
+          <div class="col-12 col-md-6 p-0 m-0 ps-md-2" style="height: 15rem">
+            <picture class="p-0 m-0 w-100">
+              <source media="(min-width: 450px)" srcset="../assets/images/salt_lg.jpg">
+              <img class="p-0 rounded-4 m-0 w-100 fit-image" src="../assets/images/salt_sm.jpg"
+                alt="En burk salt som ligger ned på ett bord.">
             </picture>
-            <h4 class="pt-3 pb-2 m-0">Starka lösenord och tvåfaktors-autentisering</h4>
-            <p class="row m-0">
-              Användning av starka och unika lösenord kombinerat med tvåfaktors-autentisering ökar säkerheten för användarkonton väsentligt.
-            </p>
           </div>
-          <div class="col-12 col-lg-4">
-            <img class="row m-0 p-0 rounded-4 d-none d-lg-block mb-3 w-100" src="../assets/images/iphones.jpg" alt="Två iPhones.">
-            <h4 class="pt-3 pb-2 m-0">Säker surfning och nedladdning av program</h4>
-            <p class="row m-0">
-              Undvik att besöka osäkra webbplatser och ladda endast ner programvaror och filer från pålitliga källor för att förhindra exponering för skadlig kod.
-            </p>
-          </div>
-          <div class="col-12 col-lg-4">
-            <img class="row m-0 p-0 rounded-4 d-none d-lg-block mb-3 w-100" src="../assets/images/security.jpg" alt="En kedja låser fast teknologi.">
-            <h4 class="pt-3 pb-2 m-0">Säkerhetsprogramvara och uppdateringar</h4>
-            <p class="row m-0">
-              Regelbunden uppdatering av antivirus-, antimalware- och säkerhetsprogramvara är avgörande för att förhindra och identifiera hot på nätet.
+          <div class="col-12 col-md-6 p-0 m-0 pe-md-2">
+            <h3 class="pt-3">Implementerar variation</h3>
+            <p class="m-0 p-0">
+              Med användning av salt blir samma lösenord som skapar identiska hashar mindre vanliga, vilket minskar
+              risken för intrång genom att fördjupa säkerheten.
             </p>
           </div>
         </div>
       </div>
 
-      <!-- Starka lösenord och tvåfaktorsautentisering -->
-      <div class="container-xl p-0 m-auto two-columns mt-4 mb-5 pb-5">
-        <h3 class="h1 pb-2 negative-margin">Starka lösenord och tvåfaktorsautentisering</h3>
+      <!-- Hur fungerar saltning av lösenord -->
+      <div class="container-xl p-0 m-auto two-columns mt-4 mb-b pt-3 pb-5">
+        <h3 class="h1 pb-2 negative-margin">Hur fungerar saltning av lösenord</h3>
         <p class="py-0 m-0">
-          Användning av unika lösenord för varje konto minskar risken för att flera konton komprometteras om ett lösenord exponeras. Genom att lägga till ytterligare steg för att verifiera användarens identitet ger tvåfaktorsautentisering ett extra lager av säkerhet vid inloggning. Användning av lösenordsförvaltare hjälper användare att skapa, lagra och använda starka och unika lösenord för olika konton.</p>
-      </div>
-
-      <!-- Hur man implementerar säker lagring av lösenord -->
-      <div class="container-xl p-0 m-auto two-columns mt-4 pb-3">
-        <h3 class="h1 pb-2 negative-margin">Hur man implementerar säker lagring av lösenord</h3>
-        <p class="py-0 m-0">
-          Börja med att utvärdera och uppdatera databaskryptering för att säkerställa skydd av lösenordsdata. Inför en tydlig lösenordspolicy för att reglera lösenordshantering och säkerställa bästa praxis hos användarna. Överväg att använda flerfaktorautentisering för att öka säkerheten och skyddet för lösenordsåtkomst.
+          Saltning innebär att slumpmässig data läggs till innan hashning processen för att öka komplexiteten i
+          skapandet av hashade lösenord. Genom att varje lösenord får sitt eget salt blir resultaten av hashning unika
+          även för samma lösenord, vilket ökar säkerheten. Den extra slumpmässiga datan skapar en större utmaning för
+          potentiella intrångsförsök vid avkodning av lösenorden.
         </p>
       </div>
-    </section>
 
-    <div class="container-fluid bg-dark py-2 py-md-5 m-0">
-      <div class="w-25 bg-primary m-auto rounded-5 pt-1"></div>
-    </div>
-
-    <!-- Hashning -->
-    <section class="container-fluid bg-dark px-3 px-sm-4 px-md-5 pb-4 pb-md-5 pt-5">
-      <div class="container-xl p-0 m-auto">
-        <div class="container-xl p-0 m-auto two-columns mt-4 mb-5">
-          <h3 class="display-4 pb-2 negative-margin">Hashning</h3>
-          <p class="py-0 m-0 mb-5">
-            Hashning är en teknik som används för att konvertera data till en kortare representation, vanligtvis för att säkerställa dataintegritet. Det involverar en hashfunktion som genererar en unik kodad sträng från en given indata.
-        </div>
-
-        <!-- Varför använda salt vid hashning av lösenord? -->
-        <div class="p-0 m-0 pb-5">
-          <h2 class="h1 pb-5 m-0">Varför använda salt vid hashning av lösenord?</h2>
-          <div class="row p-0 m-0">
-            <div class="col-12 col-md-6 p-0 m-0 pe-md-2">
-              <h3 class="pt-3 pt-md-0">Förbättrar säkerheten</h3>
-              <p class="mb-md-5 p-0">
-                Saltning av lösenord förhindrar att samma lösenord alltid genererar samma hash och försvårar avkodning av lösenorden av intrångsförsök.
-              </p>
-            </div>
-            <div class="col-12 col-md-6 p-0 m-0 ps-md-2 pb-3 pb-md-0">
-              <h3 class="pt-3 pt-md-0">Ökad motståndskraft</h3>
-              <p class="m-0 p-0">
-                Saltning försvårar användningen av förvalda eller förutbestämda tabeller för avkodning av hashade lösenord, vilket ökar motståndet mot avkodningsförsök.
-              </p>
-            </div>
-          </div>
-          <div class="row p-0 m-0 flex-md-row-reverse">
-            <div class="col-12 col-md-6 p-0 m-0 ps-md-2" style="height: 15rem">
-              <picture class="p-0 m-0 w-100">
-                <source media="(min-width: 450px)" srcset="../assets/images/salt_lg.jpg">
-                <img class="p-0 rounded-4 m-0 w-100 fit-image" src="../assets/images/salt_sm.jpg" alt="En burk salt som ligger ned på ett bord.">
-              </picture>
-            </div>
-            <div class="col-12 col-md-6 p-0 m-0 pe-md-2">
-              <h3 class="pt-3">Implementerar variation</h3>
-              <p class="m-0 p-0">
-                Med användning av salt blir samma lösenord som skapar identiska hashar mindre vanliga, vilket minskar risken för intrång genom att fördjupa säkerheten.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Hur fungerar saltning av lösenord -->
-        <div class="container-xl p-0 m-auto two-columns mt-4 mb-b pt-3 pb-5">
-          <h3 class="h1 pb-2 negative-margin">Hur fungerar saltning av lösenord</h3>
-          <p class="py-0 m-0">
-            Saltning innebär att slumpmässig data läggs till innan hashning processen för att öka komplexiteten i skapandet av hashade lösenord. Genom att varje lösenord får sitt eget salt blir resultaten av hashning unika även för samma lösenord, vilket ökar säkerheten. Den extra slumpmässiga datan skapar en större utmaning för potentiella intrångsförsök vid avkodning av lösenorden.
-          </p>
-        </div>
-
-        <!-- Fördelar med att använda saltning vid lagring av lösenord -->
-        <div class="container-xl p-0 m-auto two-columns mt-4 mb-4">
-          <h3 class="h1 pb-2 negative-margin">Fördelar med att använda saltning vid lagring av lösenord</h3>
-          <p class="py-0 m-0">
-            Saltning av lösenord förhindrar enkel avkodning och minskar risken för dataintrång och obehörig åtkomst. Genom att skapa unika hashar minskar saltning sårbarheten för lösenord som återanvänds eller är förutbestämda. Med ökad säkerhet och minskad sårbarhet gynnas användarintegriteten genom skydd av lösenordsdata.
-          </p>
-        </div>        
-      </div>
-    </section>
-
-    <div class="container-fluid bg-dark pt-2 py-md-5 m-0 pb-4">
-      <div class=" w-25 bg-primary m-auto rounded-5 pt-1 mb-3"></div>
-    </div>
-
-    <!-- Säker lagring av lösenord -->
-    <section class="container-fluid bg-dark px-3 px-sm-4 px-md-5 pb-5 pt-5 mt-0">
-      <div class="container-xl p-0 m-auto">
-        <h2 class="display-4 pb-2 pb-md-4">Säker lagring av lösenord</h2>
-        <div class="two-columns mb-5">
-          <p class="m-0 pb-3">
-            Använda starka hashfunktioner &ndash; Se till att valda hashfunktioner är robusta och säkra för överlägsen lösenordskryptering.
-          </p>
-          <p class="m-0 pb-3">
-            Tillämpa saltningstekniker &ndash; Använd saltning för att öka komplexiteten och säkerheten hos lagrade lösenord.
-          </p>
-          <p class="m-0 pb-3">
-            Utbilda användare &ndash; Informera och utbilda användare om säker och ansvarsfull hantering av lösenord för att förbättra företagets datasäkerhet.
-          </p>
-        </div>
-        <div class="two-columns">
-          <h3 class="h1 pb-2 pb-md-4">Hur man implementerar säker lagring av lösenord</h3>
-          <p class="m-0">
-            Börja med att utvärdera och uppdatera databaskryptering för att säkerställa skydd av lösenordsdata. Inför en tydlig lösenordspolicy för att reglera lösenordshantering och säkerställa bästa praxis hos användarna. Överväg att använda flerfaktorautentisering för att öka säkerheten och skyddet för lösenordsåtkomst.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Sammanfattning och slutsats -->
-    <section class="container-fluid bg-dark px-3 px-sm-4 px-md-5 pb-5 pt-5 mt-0">
-      <div class="container-xl p-0 m-auto">
-        <picture class="p-0 m-0 w-100">
-          <source media="(min-width: 992px)" srcset="../assets/images/computer2_lg.jpg">
-          <source media="(min-width: 576px)" srcset="../assets/images/computer2_md.jpg">
-          <img class="p-0 rounded-5 m-0 w-100 fit-image" src="../assets/images/computer2_sm.jpg" alt="En knappt öppnad MacBook.">
-        </picture>
-        <h2 class="display-4 pb-2 pb-md-4 mt-5">Sammanfattning och slutsats</h2>
-        <p class="two-columns m-0">
-          En säker lagring av lösenord är avgörande för att skydda företags och användares integritet. Genom att integrera saltningstekniker och bästa praxis skapas starka och motståndskraftiga skyddsbarriärer mot dataintrång och sårbarheter.
+      <!-- Fördelar med att använda saltning vid lagring av lösenord -->
+      <div class="container-xl p-0 m-auto two-columns mt-4 mb-4">
+        <h3 class="h1 pb-2 negative-margin">Fördelar med att använda saltning vid lagring av lösenord</h3>
+        <p class="py-0 m-0">
+          Saltning av lösenord förhindrar enkel avkodning och minskar risken för dataintrång och obehörig åtkomst. Genom
+          att skapa unika hashar minskar saltning sårbarheten för lösenord som återanvänds eller är förutbestämda. Med
+          ökad säkerhet och minskad sårbarhet gynnas användarintegriteten genom skydd av lösenordsdata.
         </p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- semi circle -->
-    <div class="container-fluid m-0 p-0 d-flex justify-content-center">
-      <div class="semi-circle container-xl p-0 m-0">
-        <img class="w-auto h-auto" src="../assets/icons/semi_circle_dark.svg" style="transform: scaleY(-1);" alt="">
+  <div class="container-fluid bg-dark pt-2 py-md-5 m-0 pb-4">
+    <div class=" w-25 bg-primary m-auto rounded-5 pt-1 mb-3"></div>
+  </div>
+
+  <!-- Säker lagring av lösenord -->
+  <section class="container-fluid bg-dark px-3 px-sm-4 px-md-5 pb-5 pt-5 mt-0">
+    <div class="container-xl p-0 m-auto">
+      <h2 class="display-4 pb-2 pb-md-4">Säker lagring av lösenord</h2>
+      <div class="two-columns mb-5">
+        <p class="m-0 pb-3">
+          Använda starka hashfunktioner &ndash; Se till att valda hashfunktioner är robusta och säkra för överlägsen
+          lösenordskryptering.
+        </p>
+        <p class="m-0 pb-3">
+          Tillämpa saltningstekniker &ndash; Använd saltning för att öka komplexiteten och säkerheten hos lagrade
+          lösenord.
+        </p>
+        <p class="m-0 pb-3">
+          Utbilda användare &ndash; Informera och utbilda användare om säker och ansvarsfull hantering av lösenord för
+          att förbättra företagets datasäkerhet.
+        </p>
+      </div>
+      <div class="two-columns">
+        <h3 class="h1 pb-2 pb-md-4">Hur man implementerar säker lagring av lösenord</h3>
+        <p class="m-0">
+          Börja med att utvärdera och uppdatera databaskryptering för att säkerställa skydd av lösenordsdata. Inför en
+          tydlig lösenordspolicy för att reglera lösenordshantering och säkerställa bästa praxis hos användarna. Överväg
+          att använda flerfaktorautentisering för att öka säkerheten och skyddet för lösenordsåtkomst.
+        </p>
       </div>
     </div>
+  </section>
 
-    <!-- footer -->
-    <footer class="container-fluid px-3 p-sm-4 p-md-5 py-5">
-      <div class="container-xl mb-5 p-0">
-        <h1 class="display-4 text-start mb-3 mb-md-4 mb-lg-5 mt-4">Hur bra koll har du  på säkerhet på nätet?</h1>
-        <a href="../html/quiz.html" class="btn btn-primary rounded-4 d-flex justify-content-center align-items-center">
-          <div class="font-bungee text-dark h1 m-0 px-3 py-3 py-lg-4">TESTA DIN KUNSKAP MED VÅRT QUIZ!</div> 
+  <!-- Sammanfattning och slutsats -->
+  <section class="container-fluid bg-dark px-3 px-sm-4 px-md-5 pb-5 pt-5 mt-0">
+    <div class="container-xl p-0 m-auto">
+      <picture class="p-0 m-0 w-100">
+        <source media="(min-width: 992px)" srcset="../assets/images/computer2_lg.jpg">
+        <source media="(min-width: 576px)" srcset="../assets/images/computer2_md.jpg">
+        <img class="p-0 rounded-5 m-0 w-100 fit-image" src="../assets/images/computer2_sm.jpg"
+          alt="En knappt öppnad MacBook.">
+      </picture>
+      <h2 class="display-4 pb-2 pb-md-4 mt-5">Sammanfattning och slutsats</h2>
+      <p class="two-columns m-0">
+        En säker lagring av lösenord är avgörande för att skydda företags och användares integritet. Genom att integrera
+        saltningstekniker och bästa praxis skapas starka och motståndskraftiga skyddsbarriärer mot dataintrång och
+        sårbarheter.
+      </p>
+    </div>
+  </section>
+
+  <!-- semi circle -->
+  <div class="container-fluid m-0 p-0 d-flex justify-content-center">
+    <div class="semi-circle container-xl p-0 m-0">
+      <img class="w-auto h-auto" src="../assets/icons/semi_circle_dark.svg" style="transform: scaleY(-1);" alt="">
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="container-fluid px-3 p-sm-4 p-md-5 py-5">
+    <div class="container-xl mb-5 p-0">
+      <h1 class="display-4 text-start mb-3 mb-md-4 mb-lg-5 mt-4">Hur bra koll har du på säkerhet på nätet?</h1>
+      <a href="quiz.html" class="btn btn-primary rounded-4 d-flex justify-content-center align-items-center">
+        <div class="font-bungee text-dark h1 m-0 px-3 py-3 py-lg-4">TESTA DIN KUNSKAP MED VÅRT QUIZ!</div>
+      </a>
+      <div class="row d-flex justify-content-between m-0 mt-3 mt-md-4 mt-lg-5 p-0">
+        <a href="../index.html"
+          class="home-button col-12 col-md-auto btn btn-primary rounded-4 p-3 d-flex justify-content-center align-items-center">
+          <img class="w-100 h-100" src="../assets/icons/home.svg" alt="Hem">
         </a>
-        <div class="row d-flex justify-content-between m-0 mt-3 mt-md-4 mt-lg-5 p-0">
-          <a href="../index.html" class="home-button col-12 col-md-auto btn btn-primary rounded-4 p-3 d-flex justify-content-center align-items-center">
-            <img class="w-100 h-100" src="../assets/icons/home.svg" alt="Hem">
-          </a>
-          <p class="col-12 col-md-auto m-0 p-0 text-end pt-2 pt-sm-0">Den här hemsidan är skapad av<br><b>Arvid Renestam</b></p>
-        </div>
+        <p class="col-12 col-md-auto m-0 p-0 text-end pt-2 pt-sm-0">Den här hemsidan är skapad av<br><b>Arvid
+            Renestam</b></p>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-  </body>
+</body>
+
 </html>

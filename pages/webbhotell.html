@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="sv">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,146 +13,165 @@
 </head>
 
 <body class="bg-secondary text-light">
-<div id="blob"></div>
-<div id="blob-blur"></div>
+  <div id="blob"></div>
+  <div id="blob-blur"></div>
 
   <!-- scroll to top button -->
-<button onclick="scrollToTop()" id="exit-button" class="fade btn btn-secondary rounded-3 px-2 pb-2">
-  <img class="w-100 h-100" src="../assets/icons/up_arrow.svg" alt="Gå längst upp">
-</button>
+  <button onclick="scrollToTop()" id="exit-button" class="fade btn btn-secondary rounded-3 px-2 pb-2">
+    <img class="w-100 h-100" src="../assets/icons/up_arrow.svg" alt="Gå längst upp">
+  </button>
 
   <!-- navigation -->
-<nav class="container-fluid px-3 px-sm-4 px-md-5 py-3">
-  <div class="container-xl bg-dark m-auto p-4 px-md-5 rounded-4 flex-wrap d-flex gap-4 justify-content-between">
-    <a href="../index.html" class="h4 m-0 fw-bold">Hem</a>
-    <a href="integritet.html" class="h4 m-0 fw-bold">Integritet</a>
-    <a href="lagar.html" class="h4 m-0 fw-bold">Lagar</a>
-    <a href="losenord.html" class="h4 m-0 fw-bold">Lösenord</a>
-    <a href="webbhotell.html" class="h4 m-0 fw-bold underline">Webbhotell</a>
-    <a href="tredjepartskod.html" class="h4 m-0 fw-bold">Tredjepartskod</a>
-    <a href="sakerhetshot.html" class="h4 m-0 fw-bold">Säkerhetshot</a>
-  </div>
-</nav>
+  <nav class="container-fluid px-3 px-sm-4 px-md-5 py-3">
+    <div class="container-xl bg-dark m-auto p-4 px-md-5 rounded-4 flex-wrap d-flex gap-4 justify-content-between">
+      <a href="../index.html" class="h4 m-0 fw-bold">Hem</a>
+      <a href="integritet.html" class="h4 m-0 fw-bold">Integritet</a>
+      <a href="lagar.html" class="h4 m-0 fw-bold">Lagar</a>
+      <a href="losenord.html" class="h4 m-0 fw-bold">Lösenord</a>
+      <a href="webbhotell.html" class="h4 m-0 fw-bold underline">Webbhotell</a>
+      <a href="tredjepartskod.html" class="h4 m-0 fw-bold">Tredjepartskod</a>
+      <a href="sakerhetshot.html" class="h4 m-0 fw-bold">Säkerhetshot</a>
+    </div>
+  </nav>
 
-<header class="container-fluid px-3 px-sm-4 px-md-5 pt-5 pb-4 pb-xl-5 m-0">
+  <header class="container-fluid px-3 px-sm-4 px-md-5 pt-5 pb-4 pb-xl-5 m-0">
     <div class="container-xl m-auto p-0">
       <h1 class="display-1 p-0 m-0">Vad är ett webbhotell och vilket borde du välja?</h1>
     </div>
-</header>
+  </header>
 
-<!-- semi circle -->
-<div class="container-fluid m-0 p-0 d-flex justify-content-center">
-  <div class="semi-circle container-xl p-0 m-0">
-    <img class="w-auto h-auto" src="../assets/icons/semi_circle_dark.svg" alt="">
+  <!-- semi circle -->
+  <div class="container-fluid m-0 p-0 d-flex justify-content-center">
+    <div class="semi-circle container-xl p-0 m-0">
+      <img class="w-auto h-auto" src="../assets/icons/semi_circle_dark.svg" alt="">
+    </div>
   </div>
-</div>
 
-<section class="container-fluid bg-dark px-3 px-sm-4 px-md-5 mb-0 pb-5 pt-2">
-  <div class="container-xl p-0 m-auto">
-    <!-- Webbhotellets funktion -->
-    <div class="mb-5">
-      <h2 class="h1 pb-4 m-0">Webbhotellets funktion</h2>
-      <p class="two-columns m-0">
-        Ett webbhotell är en tjänst som tillhandahåller lagringsutrymme för en webbplats på en server som är ansluten till internet. Det gör det möjligt för webbplatser att vara tillgängliga online. Webbhotell kan också erbjuda andra funktioner som e-posthantering, databashantering och säkerhetskopiering av data.
+  <section class="container-fluid bg-dark px-3 px-sm-4 px-md-5 mb-0 pb-5 pt-2">
+    <div class="container-xl p-0 m-auto">
+      <!-- Webbhotellets funktion -->
+      <div class="mb-5">
+        <h2 class="h1 pb-4 m-0">Webbhotellets funktion</h2>
+        <p class="two-columns m-0">
+          Ett webbhotell är en tjänst som tillhandahåller lagringsutrymme för en webbplats på en server som är ansluten
+          till internet. Det gör det möjligt för webbplatser att vara tillgängliga online. Webbhotell kan också erbjuda
+          andra funktioner som e-posthantering, databashantering och säkerhetskopiering av data.
+        </p>
+      </div>
+
+      <!-- Viktiga faktorer att överväga vid val av webbhotell -->
+      <div class="mb-2 pt-3">
+        <h2 class="h1 m-0 pb-3 pb-md-4">Viktiga faktorer att överväga vid val av webbhotell</h2>
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <picture class="row m-0">
+              <source media="(min-width: 768px)" srcset="../assets/images/price_sm.jpg">
+              <source media="(min-width: 500px)" srcset="../assets/images/price_lg.jpg">
+              <img class="p-0 rounded-4 mb-3" src="../assets/images/price_sm.jpg"
+                alt="En dator och telefon som visar aktiemarknaden.">
+            </picture>
+            <p class="row m-0">
+              Det är viktigt att hitta en bra balans mellan pris och prestanda. Jämför olika erbjudanden och tänk på
+              behoven för den specifika webbplatsen.
+            </p>
+          </div>
+          <div class="col-12 col-md-4">
+            <img class="row m-0 p-0 rounded-4 d-none d-md-block mb-3 w-100" src="../assets/images/lock.jpg"
+              alt="Någon låser upp ett hänglås.">
+            <p class="row m-0">
+              Ett pålitligt webbhotell bör erbjuda hög tillgänglighet och minimal nedtid. Det är viktigt att webbplatsen
+              är tillgänglig för besökare när som helst.
+            </p>
+          </div>
+          <div class="col-12 col-md-4">
+            <img class="row m-0 p-0 rounded-4 d-none d-md-block mb-3 w-100" src="../assets/images/troubled_guy.jpg"
+              alt="En kille ser bekymrad ut framför datorn.">
+            <p class="row m-0">
+              En bra supporttjänst är avgörande. Kontrollera om webbhotellet erbjuder snabb och tillförlitlig
+              kundsupport som kan hjälpa till vid eventuella problem.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container-fluid bg-dark py-2 py-md-5 m-0">
+    <div class="w-25 bg-primary m-auto rounded-5 pt-1"></div>
+  </div>
+
+  <section class="container-fluid bg-dark px-3 px-sm-4 px-md-5 mb-0 pb-5 pt-5">
+
+    <div class="container-xl p-0 m-auto two-columns mt-4 mb-5 pb-5">
+      <h2 class="h1 pb-2 negative-margin">Pris och prestanda</h2>
+      <p class="py-0 m-0">
+        För mindre webbplatser eller personliga bloggar kan ett prisvärt alternativ vara tillräckligt. För
+        företagswebbplatser eller e-handelsplattformar är det viktigt med hög prestanda och tillräckligt med
+        lagringsutrymme.
       </p>
     </div>
-    
-    <!-- Viktiga faktorer att överväga vid val av webbhotell -->
-    <div class="mb-2 pt-3">
-      <h2 class="h1 m-0 pb-3 pb-md-4">Viktiga faktorer att överväga vid val av webbhotell</h2>
-      <div class="row">
-        <div class="col-12 col-md-4">
-          <picture class="row m-0">
-            <source media="(min-width: 768px)" srcset="../assets/images/price_sm.jpg">
-            <source media="(min-width: 500px)" srcset="../assets/images/price_lg.jpg">
-            <img class="p-0 rounded-4 mb-3" src="../assets/images/price_sm.jpg" alt="En dator och telefon som visar aktiemarknaden.">
-          </picture>
-          <p class="row m-0">
-            Det är viktigt att hitta en bra balans mellan pris och prestanda. Jämför olika erbjudanden och tänk på behoven för den specifika webbplatsen.
-          </p>
-        </div>
-        <div class="col-12 col-md-4">
-          <img class="row m-0 p-0 rounded-4 d-none d-md-block mb-3 w-100" src="../assets/images/lock.jpg" alt="Någon låser upp ett hänglås.">
-          <p class="row m-0">
-            Ett pålitligt webbhotell bör erbjuda hög tillgänglighet och minimal nedtid. Det är viktigt att webbplatsen är tillgänglig för besökare när som helst.
-          </p>
-        </div>
-        <div class="col-12 col-md-4">
-          <img class="row m-0 p-0 rounded-4 d-none d-md-block mb-3 w-100" src="../assets/images/troubled_guy.jpg" alt="En kille ser bekymrad ut framför datorn.">
-          <p class="row m-0">
-            En bra supporttjänst är avgörande. Kontrollera om webbhotellet erbjuder snabb och tillförlitlig kundsupport som kan hjälpa till vid eventuella problem.
-          </p>
-        </div>
-      </div>
+
+    <!-- Tillgänglighet och pålitlighet -->
+    <div class="container-xl p-0 m-auto two-columns mt-4 pb-3">
+      <h2 class="h1 pb-2 negative-margin">Tillgänglighet och pålitlighet</h2>
+      <p class="py-0 m-0">
+        Säkerställ att webbhotellet har flera anslutningar till internet för att minska risken för avbrott. Leta efter
+        webbhotell med hög garanterad tillgänglighet (uptime) för att säkerställa att webbplatsen är tillgänglig nästan
+        hela tiden.
+      </p>
     </div>
-  </div>
-</section>
+  </section>
 
-<div class="container-fluid bg-dark py-2 py-md-5 m-0">
-  <div class="w-25 bg-primary m-auto rounded-5 pt-1"></div>
-</div>
-  
-<section class="container-fluid bg-dark px-3 px-sm-4 px-md-5 mb-0 pb-5 pt-5">
-
-  <div class="container-xl p-0 m-auto two-columns mt-4 mb-5 pb-5">
-    <h2 class="h1 pb-2 negative-margin">Pris och prestanda</h2>
-    <p class="py-0 m-0">
-      För mindre webbplatser eller personliga bloggar kan ett prisvärt alternativ vara tillräckligt. För företagswebbplatser eller e-handelsplattformar är det viktigt med hög prestanda och tillräckligt med lagringsutrymme.
-    </p>
+  <div class="container-fluid bg-dark py-2 py-md-5 m-0">
+    <div class="w-25 bg-primary m-auto rounded-5 pt-1"></div>
   </div>
 
-  <!-- Tillgänglighet och pålitlighet -->
-  <div class="container-xl p-0 m-auto two-columns mt-4 pb-3">
-    <h2 class="h1 pb-2 negative-margin">Tillgänglighet och pålitlighet</h2>
-    <p class="py-0 m-0">
-      Säkerställ att webbhotellet har flera anslutningar till internet för att minska risken för avbrott. Leta efter webbhotell med hög garanterad tillgänglighet (uptime) för att säkerställa att webbplatsen är tillgänglig nästan hela tiden. 
-    </p>
-  </div>
-</section>
-
-<div class="container-fluid bg-dark py-2 py-md-5 m-0">
-  <div class="w-25 bg-primary m-auto rounded-5 pt-1"></div>
-</div>
-
-<section class="container-fluid bg-dark px-3 px-sm-4 px-md-5 pb-4 pb-md-5 pt-5">
-  <div class="container-xl p-0 m-auto">
-    <div class="row p-0 m-0 mb-2 mb-lg-5 pb-4">
-      <div class="col-12 col-lg-6 p-0 m-0 ps-lg-2 pb-3 pb-md-0 pe-lg-4">
-        <h2 class="h1 pt-3 pt-md-0">Säkerhetsfunktioner och skydd mot hot</h2>
-        <p class="m-0 p-0">
-          Regelbundna säkerhetskopieringar och återställningsalternativ är avgörande för att skydda data. En webbplats bör utrustas med SSL-certifikat för att säkerställa att kommunikationen är krypterad och säker. Webbhotellet bör erbjuda skydd mot skadlig programvara och regelbundna säkerhetsuppdateringar.
-        </p>
+  <section class="container-fluid bg-dark px-3 px-sm-4 px-md-5 pb-4 pb-md-5 pt-5">
+    <div class="container-xl p-0 m-auto">
+      <div class="row p-0 m-0 mb-2 mb-lg-5 pb-4">
+        <div class="col-12 col-lg-6 p-0 m-0 ps-lg-2 pb-3 pb-md-0 pe-lg-4">
+          <h2 class="h1 pt-3 pt-md-0">Säkerhetsfunktioner och skydd mot hot</h2>
+          <p class="m-0 p-0">
+            Regelbundna säkerhetskopieringar och återställningsalternativ är avgörande för att skydda data. En webbplats
+            bör utrustas med SSL-certifikat för att säkerställa att kommunikationen är krypterad och säker. Webbhotellet
+            bör erbjuda skydd mot skadlig programvara och regelbundna säkerhetsuppdateringar.
+          </p>
+        </div>
+        <div class="col-12 col-lg-6 p-0 m-0 ps-lg-4">
+          <h2 class="h1 pt-3 pt-lg-0">Kundsupport och tekniskt support</h2>
+          <p class="mb-lg-5 p-0">
+            En supportenhet som kan ge snabba svar på frågor eller hjälpa till med tekniska problem är mycket viktig.
+            Försäkra dig om att supportteamet har den tekniska expertis som krävs för att hantera olika utmaningar.
+          </p>
+        </div>
       </div>
-      <div class="col-12 col-lg-6 p-0 m-0 ps-lg-4">
-        <h2 class="h1 pt-3 pt-lg-0">Kundsupport och tekniskt support</h2>
-        <p class="mb-lg-5 p-0">
-          En supportenhet som kan ge snabba svar på frågor eller hjälpa till med tekniska problem är mycket viktig. Försäkra dig om att supportteamet har den tekniska expertis som krävs för att hantera olika utmaningar.
-        </p>
-      </div>
+      <picture class="p-0 m-0 w-100">
+        <source media="(min-width: 992px)" srcset="../assets/images/website_lg.jpg">
+        <source media="(min-width: 576px)" srcset="../assets/images/website_md.jpg">
+        <img class="p-0 rounded-5 m-0 w-100 fit-image border border-primary border-3"
+          src="../assets/images/website_sm.jpg" alt="En bild på inget mindre än just denna hemsida!">
+      </picture>
     </div>
-    <picture class="p-0 m-0 w-100">
-      <source media="(min-width: 992px)" srcset="../assets/images/website_lg.jpg">
-      <source media="(min-width: 576px)" srcset="../assets/images/website_md.jpg">
-      <img class="p-0 rounded-5 m-0 w-100 fit-image border border-primary border-3" src="../assets/images/website_sm.jpg" alt="En bild på inget mindre än just denna hemsida!">
-    </picture>
-  </div>
-</section>
+  </section>
 
-<!-- footer -->
-<footer class="container-fluid px-3 p-sm-4 p-md-5 py-5">
-  <div class="container-xl mb-5 p-0">
-    <h1 class="display-4 text-start mb-3 mb-md-4 mb-lg-5 mt-4">Hur bra koll har du  på säkerhet på nätet?</h1>
-    <a href="../html/quiz.html" class="btn btn-primary rounded-4 d-flex justify-content-center align-items-center">
-      <div class="font-bungee text-dark h1 m-0 px-3 py-3 py-lg-4">TESTA DIN KUNSKAP MED VÅRT QUIZ!</div> 
-    </a>
-    <div class="row d-flex justify-content-between m-0 mt-3 mt-md-4 mt-lg-5 p-0">
-      <a href="../index.html" class="home-button col-12 col-md-auto btn btn-primary rounded-4 p-3 d-flex justify-content-center align-items-center">
-        <img class="w-100 h-100" src="../assets/icons/home.svg" alt="Hem">
+  <!-- footer -->
+  <footer class="container-fluid px-3 p-sm-4 p-md-5 py-5">
+    <div class="container-xl mb-5 p-0">
+      <h1 class="display-4 text-start mb-3 mb-md-4 mb-lg-5 mt-4">Hur bra koll har du på säkerhet på nätet?</h1>
+      <a href="quiz.html" class="btn btn-primary rounded-4 d-flex justify-content-center align-items-center">
+        <div class="font-bungee text-dark h1 m-0 px-3 py-3 py-lg-4">TESTA DIN KUNSKAP MED VÅRT QUIZ!</div>
       </a>
-      <p class="col-12 col-md-auto m-0 p-0 text-end pt-2 pt-sm-0">Den här hemsidan är skapad av<br><b>Arvid Renestam</b></p>
+      <div class="row d-flex justify-content-between m-0 mt-3 mt-md-4 mt-lg-5 p-0">
+        <a href="../index.html"
+          class="home-button col-12 col-md-auto btn btn-primary rounded-4 p-3 d-flex justify-content-center align-items-center">
+          <img class="w-100 h-100" src="../assets/icons/home.svg" alt="Hem">
+        </a>
+        <p class="col-12 col-md-auto m-0 p-0 text-end pt-2 pt-sm-0">Den här hemsidan är skapad av<br><b>Arvid
+            Renestam</b></p>
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
 </body>
+
 </html>

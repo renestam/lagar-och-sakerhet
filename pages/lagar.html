@@ -1,205 +1,238 @@
 <!doctype html>
 <html lang="sv">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lagar & Säkerhet</title>
-    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.svg">
-    <link rel="stylesheet" href="../styles/main.min.css">
-    <script defer src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="../styles/style.css">
-    <script defer src="../scripts/script.js"></script>
-  </head>
 
-  <body class="bg-secondary text-light">
-    <div id="blob"></div>
-    <div id="blob-blur"></div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lagar & Säkerhet</title>
+  <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.svg">
+  <link rel="stylesheet" href="../styles/main.min.css">
+  <script defer src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="../styles/style.css">
+  <script defer src="../scripts/script.js"></script>
+</head>
 
-    <!-- scroll to top button -->
-    <button onclick="scrollToTop()" id="exit-button" class="fade btn btn-secondary rounded-3 px-2 pb-2">
-      <img class="w-100 h-100" src="../assets/icons/up_arrow.svg" alt="Gå längst upp">
-    </button>
+<body class="bg-secondary text-light">
+  <div id="blob"></div>
+  <div id="blob-blur"></div>
 
-     <!-- navigation -->
-     <nav class="container-fluid px-3 px-sm-4 px-md-5 py-3">
-      <div class="container-xl bg-dark m-auto p-4 px-md-5 rounded-4 flex-wrap d-flex gap-4 justify-content-between">
-        <a href="../index.html" class="h4 m-0 fw-bold">Hem</a>
-        <a href="integritet.html" class="h4 m-0 fw-bold">Integritet</a>
-        <a href="lagar.html" class="h4 m-0 fw-bold underline">Lagar</a>
-        <a href="losenord.html" class="h4 m-0 fw-bold">Lösenord</a>
-        <a href="webbhotell.html" class="h4 m-0 fw-bold">Webbhotell</a>
-        <a href="tredjepartskod.html" class="h4 m-0 fw-bold">Tredjepartskod</a>
-        <a href="sakerhetshot.html" class="h4 m-0 fw-bold">Säkerhetshot</a>
-      </div>
-    </nav>
+  <!-- scroll to top button -->
+  <button onclick="scrollToTop()" id="exit-button" class="fade btn btn-secondary rounded-3 px-2 pb-2">
+    <img class="w-100 h-100" src="../assets/icons/up_arrow.svg" alt="Gå längst upp">
+  </button>
 
-    <header class="container-fluid px-3 px-sm-4 px-md-5 pt-5 pb-4 pb-xl-5 m-0">
-        <div class="container-xl m-auto p-0">
-          <h1 class="display-1 p-0 m-0">Viktiga lagar som kan vara bra att känna till</h1>
-        </div>
-    </header>
-
-    <!-- semi circle -->
-    <div class="container-fluid m-0 p-0 d-flex justify-content-center">
-      <div class="semi-circle container-xl p-0 m-0">
-        <img class="w-auto h-auto" src="../assets/icons/semi_circle_dark.svg" alt="">
-      </div>
+  <!-- navigation -->
+  <nav class="container-fluid px-3 px-sm-4 px-md-5 py-3">
+    <div class="container-xl bg-dark m-auto p-4 px-md-5 rounded-4 flex-wrap d-flex gap-4 justify-content-between">
+      <a href="../index.html" class="h4 m-0 fw-bold">Hem</a>
+      <a href="integritet.html" class="h4 m-0 fw-bold">Integritet</a>
+      <a href="lagar.html" class="h4 m-0 fw-bold underline">Lagar</a>
+      <a href="losenord.html" class="h4 m-0 fw-bold">Lösenord</a>
+      <a href="webbhotell.html" class="h4 m-0 fw-bold">Webbhotell</a>
+      <a href="tredjepartskod.html" class="h4 m-0 fw-bold">Tredjepartskod</a>
+      <a href="sakerhetshot.html" class="h4 m-0 fw-bold">Säkerhetshot</a>
     </div>
-    
-    <!-- GDPR -->
-    <section class="container-fluid bg-dark px-3 px-sm-4 px-md-5 mb-0 pb-5 pt-2">
-      <div class="container-xl p-0 m-auto">
-        <div class="mb-5">
-          <h2 class="display-4 pb-5 m-0">GDPR</h2>
-          <p class="two-columns m-0">
-            GDPR står för General Data Protection Regulation och är en lag som syftar till att skydda privatpersoners data och integritet inom EU. Den reglerar hur data får samlas in, lagras och användas av företag och organisationer. Viktiga principer i GDPR är bland annat att data endast får samlas in och behandlas med användarens tydliga samtycke, endast nödvändig data får samlas in och behandlas för att uppfylla specifika syften, företag är ansvariga för att visa efterlevnad av GDPR och säkerheten kring personlig data, privatliv och integritet måste integreras i alla databehandlingsaktiviteter- och system redan från början.
-          </p>
-        </div>
-        
-        <!-- Syftet med GDPR -->
-        <div class="mb-5 pt-3">
-          <h3 class="h1 m-0 pb-3 pb-md-4">Syftet med GDPR</h3>
-          <div class="row pb-5">
-            <div class="col-12 col-md-4">
-              <picture class="row m-0">
-                <source media="(min-width: 768px)" srcset="../assets/images/dog_sm.jpg">
-                <source media="(min-width: 500px)" srcset="../assets/images/dog_lg.jpg">
-                <img class="p-0 rounded-4 mb-3" src="../assets/images/dog_sm.jpg" alt="En liten hund framför en iPad.">
-              </picture>
-              <h4 class="pt-3 pb-2 m-0">Integritetsskydd</h4>
-              <p class="row m-0">
-                GDPR syftar till att ge en starkare kontroll över den personliga informationen och öka transparensen kring hur den används.
-              </p>
-            </div>
-            <div class="col-12 col-md-4">
-              <img class="row m-0 p-0 rounded-4 d-none d-md-block mb-3 w-100" src="../assets/images/lock.jpg" alt="Någon som låser upp ett hänglås.">
-              <h4 class="pt-3 pb-2 m-0">Reglering av datahantering</h4>
-              <p class="row m-0">
-                Genom att införa standarder för datahantering och säkerhet, syftar GDPR till att minimera riskerna för dataintrång och missbruk av information.
-              </p>
-            </div>
-            <div class="col-12 col-md-4">
-              <img class="row m-0 p-0 rounded-4 d-none d-md-block mb-3 w-100" src="../assets/images/guards.jpg" alt="Vakter som patrullerar.">
-              <h4 class="pt-3 pb-2 m-0">Företagsansvar</h4>
-              <p class="row m-0">
-                Lagen kräver att företag tar ett större ansvar för hanteringen av personlig data och ställer högre krav på säkerhet och integritet.
-              </p>
-            </div>
-          </div>
-        </div>
+  </nav>
 
-        <!-- Viktiga principer i GDPR -->
-        <div class="container-xl p-0 m-auto two-columns mt-4 mb-5 pb-5">
-          <h3 class="h1 pb-2 negative-margin">Viktiga principer i GDPR</h3>
-          <p class="py-0 m-0">
-            Data får endast samlas in och behandlas med användarens tydliga samtycke. Företag är ansvariga för att visa efterlevnad av GDPR och säkerheten kring personlig data. Endast nödvändig data får samlas in och behandlas för att uppfylla specifika syften. Företag är ansvariga för att visa efterlevnad av GDPR och säkerheten kring personlig data. Privatliv och integritet måste integreras i alla databehandlings- och aktivitetersystem redan från början.
-          </p>
-        </div>
-
-        <!-- Vilka rättigheter har användarna enligt GDPR? -->
-        <div class="container-xl p-0 m-auto two-columns mt-4 pb-3">
-          <h3 class="h1 pb-2 negative-margin">Vilka rättigheter har användarna enligt GDPR?</h3>
-          <p class="py-0 m-0">
-            Användare har rätt att få tillgång till sin personliga data och information om hur den används. Användare kan begära att felaktig eller ofullständig information rättas till. Den så kallade "rätten att bli bortglömd" ger användare möjlighet att begära att deras personliga data raderas. Användare har rätt att få sin personliga data överförd till en annan tjänsteleverantör.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <div class="container-fluid bg-dark py-2 py-md-5 m-0">
-      <div class="w-25 bg-primary m-auto rounded-5 pt-1"></div>
+  <header class="container-fluid px-3 px-sm-4 px-md-5 pt-5 pb-4 pb-xl-5 m-0">
+    <div class="container-xl m-auto p-0">
+      <h1 class="display-1 p-0 m-0">Viktiga lagar som kan vara bra att känna till</h1>
     </div>
+  </header>
 
-    <!-- Andra viktiga lagar -->
-    <section class="container-fluid bg-dark px-3 px-sm-4 px-md-5 pb-4 pb-md-5 pt-5">
-      <div class="container-xl p-0 m-auto">
-        <!-- Andra viktiga lagar i Sverige -->
-        <div class="p-0 m-0 pb-5">
-          <h2 class="display-4 pb-5 m-0">Andra viktiga lagar i Sverige</h2>
-          <div class="row p-0 m-0">
-            <div class="col-12 col-md-6 p-0 m-0 pe-md-2">
-              <h3 class="pt-3 pt-md-0">Personuppgiftslagen</h3>
-              <p class="mb-md-5 p-0">
-                Personuppgiftslagen (PUL) är en lag som reglerar hur personuppgifter får samlas in, lagras, användas och spridas. Användes innan GDPR.
-              </p>
-            </div>
-            <div class="col-12 col-md-6 p-0 m-0 ps-md-2 pb-3 pb-md-0">
-              <h3 class="pt-3 pt-md-0">Immaterialrättslagen</h3>
-              <p class="m-0 p-0">
-                Immaterialrättslagen (IML) skyddar rättigheterna för upphovsmän och företag som skapar immateriella rättigheter såsom patent, varumärken och upphovsrätt.
-              </p>
-            </div>
-          </div>
-          <div class="row p-0 m-0 flex-md-row-reverse">
-            <div class="col-12 col-md-6 p-0 m-0 ps-md-2" style="height: 15rem">
-              <picture class="p-0 m-0 w-100">
-                <source media="(min-width: 450px)" srcset="../assets/images/wifi_lg.jpg">
-                <img class="p-0 rounded-4 m-0 w-100 fit-image" src="../assets/images/wifi_sm.jpg" alt="En skylt med WiFi">
-              </picture>
-            </div>
-            <div class="col-12 col-md-6 p-0 m-0 pe-md-2">
-              <h3 class="pt-3">Lagen om elektronisk kommunikation</h3>
-              <p class="m-0 p-0">
-                Lagen om elektronisk kommunikation reglerar elektronisk kommunikation, inklusive e-post, sms, röstmeddelanden och sociala medier.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Skillnader mellan GDPR och andra lagar -->
-        <div class="container-xl p-0 m-auto two-columns mt-4 mb-b pt-3 pb-5">
-          <h3 class="h1 pb-2 negative-margin">Skillnader mellan GDPR och andra lagar</h3>
-          <p class="py-0 m-0">
-            GDPR gäller för hela EU och påverkar alla organisationer som hanterar personlig data inom unionen, medan andra lagar har mer specifika geografiska begränsningar. Även om de delar många gemensamma principer, ger vissa lagar specifika rättigheter eller har särskilda krav som skiljer sig från GDPR. Straffavgifterna för att bryta mot GDPR är betydande och kan vara mer kännbara än för andra lagar på nätet.
-          </p>
-        </div>
-
-        <!-- Konsekvenser av att inte följa GDPR och andra lagar -->
-        <div class="container-xl p-0 m-auto two-columns mt-4 mb-4">
-          <h3 class="h1 pb-2 negative-margin">Konsekvenser av att inte följa GDPR och andra lagar</h3>
-          <p class="py-0 m-0">
-            Företag kan ställas inför betydande böter och ekonomiska påföljder vid överträdelser av GDPR eller andra relevanta lagar. Överträdelser kan leda till en förlust av förtroende och skada företagets varumärke och anseende. Användare eller intressenter kan vidta rättsliga åtgärder om deras rättigheter kränks, vilket kan resultera i långa juridiska processer och straffrättsliga påföljder.
-          </p>
-        </div>        
-      </div>
-    </section>
-
-    <div class="container-fluid bg-dark pt-2 py-md-5 m-0 pb-4">
-      <div class=" w-25 bg-primary m-auto rounded-5 pt-1 mb-3"></div>
+  <!-- semi circle -->
+  <div class="container-fluid m-0 p-0 d-flex justify-content-center">
+    <div class="semi-circle container-xl p-0 m-0">
+      <img class="w-auto h-auto" src="../assets/icons/semi_circle_dark.svg" alt="">
     </div>
+  </div>
 
-    <!-- Tips för att följa lagar på nätet -->
-    <section class="container-fluid bg-dark px-3 px-sm-4 px-md-5 pb-5 pt-5 mt-0">
-      <div class="container-xl p-0 m-auto">
-        <h2 class="display-4 pb-2 pb-md-4">Tips för att följa lagar på nätet</h2>
+  <!-- GDPR -->
+  <section class="container-fluid bg-dark px-3 px-sm-4 px-md-5 mb-0 pb-5 pt-2">
+    <div class="container-xl p-0 m-auto">
+      <div class="mb-5">
+        <h2 class="display-4 pb-5 m-0">GDPR</h2>
         <p class="two-columns m-0">
-          Se till att ditt team är väl informerat om bestämmelserna och kraven enligt GDPR och andra tillämpliga lagar. Använd kryptering, åtkomstkontroller och andra säkerhetsåtgärder för att skydda personlig data. Utarbeta och håll er till en tydlig policy för insamling, lagring och användning av personlig data. Regelbunden granskning och uppdatering av system och processer för att säkerställa efterlevnad av lagar och regler.
+          GDPR står för General Data Protection Regulation och är en lag som syftar till att skydda privatpersoners data
+          och integritet inom EU. Den reglerar hur data får samlas in, lagras och användas av företag och
+          organisationer. Viktiga principer i GDPR är bland annat att data endast får samlas in och behandlas med
+          användarens tydliga samtycke, endast nödvändig data får samlas in och behandlas för att uppfylla specifika
+          syften, företag är ansvariga för att visa efterlevnad av GDPR och säkerheten kring personlig data, privatliv
+          och integritet måste integreras i alla databehandlingsaktiviteter- och system redan från början.
         </p>
       </div>
-    </section>
 
-    <!-- semi circle -->
-    <div class="container-fluid m-0 p-0 d-flex justify-content-center">
-      <div class="semi-circle container-xl p-0 m-0">
-        <img class="w-auto h-auto" src="../assets/icons/semi_circle_dark.svg" style="transform: scaleY(-1);" alt="">
-      </div>
-    </div>
-
-    <!-- footer -->
-    <footer class="container-fluid px-3 p-sm-4 p-md-5 py-5">
-      <div class="container-xl mb-5 p-0">
-        <h1 class="display-4 text-start mb-3 mb-md-4 mb-lg-5 mt-4">Hur bra koll har du  på säkerhet på nätet?</h1>
-        <a href="../html/quiz.html" class="btn btn-primary rounded-4 d-flex justify-content-center align-items-center">
-          <div class="font-bungee text-dark h1 m-0 px-3 py-3 py-lg-4">TESTA DIN KUNSKAP MED VÅRT QUIZ!</div> 
-        </a>
-        <div class="row d-flex justify-content-between m-0 mt-3 mt-md-4 mt-lg-5 p-0">
-          <a href="../index.html" class="home-button col-12 col-md-auto btn btn-primary rounded-4 p-3 d-flex justify-content-center align-items-center">
-            <img class="w-100 h-100" src="../assets/icons/home.svg" alt="Hem">
-          </a>
-          <p class="col-12 col-md-auto m-0 p-0 text-end pt-2 pt-sm-0">Den här hemsidan är skapad av<br><b>Arvid Renestam</b></p>
+      <!-- Syftet med GDPR -->
+      <div class="mb-5 pt-3">
+        <h3 class="h1 m-0 pb-3 pb-md-4">Syftet med GDPR</h3>
+        <div class="row pb-5">
+          <div class="col-12 col-md-4">
+            <picture class="row m-0">
+              <source media="(min-width: 768px)" srcset="../assets/images/dog_sm.jpg">
+              <source media="(min-width: 500px)" srcset="../assets/images/dog_lg.jpg">
+              <img class="p-0 rounded-4 mb-3" src="../assets/images/dog_sm.jpg" alt="En liten hund framför en iPad.">
+            </picture>
+            <h4 class="pt-3 pb-2 m-0">Integritetsskydd</h4>
+            <p class="row m-0">
+              GDPR syftar till att ge en starkare kontroll över den personliga informationen och öka transparensen kring
+              hur den används.
+            </p>
+          </div>
+          <div class="col-12 col-md-4">
+            <img class="row m-0 p-0 rounded-4 d-none d-md-block mb-3 w-100" src="../assets/images/lock.jpg"
+              alt="Någon som låser upp ett hänglås.">
+            <h4 class="pt-3 pb-2 m-0">Reglering av datahantering</h4>
+            <p class="row m-0">
+              Genom att införa standarder för datahantering och säkerhet, syftar GDPR till att minimera riskerna för
+              dataintrång och missbruk av information.
+            </p>
+          </div>
+          <div class="col-12 col-md-4">
+            <img class="row m-0 p-0 rounded-4 d-none d-md-block mb-3 w-100" src="../assets/images/guards.jpg"
+              alt="Vakter som patrullerar.">
+            <h4 class="pt-3 pb-2 m-0">Företagsansvar</h4>
+            <p class="row m-0">
+              Lagen kräver att företag tar ett större ansvar för hanteringen av personlig data och ställer högre krav på
+              säkerhet och integritet.
+            </p>
+          </div>
         </div>
       </div>
-    </footer>
 
-  </body>
+      <!-- Viktiga principer i GDPR -->
+      <div class="container-xl p-0 m-auto two-columns mt-4 mb-5 pb-5">
+        <h3 class="h1 pb-2 negative-margin">Viktiga principer i GDPR</h3>
+        <p class="py-0 m-0">
+          Data får endast samlas in och behandlas med användarens tydliga samtycke. Företag är ansvariga för att visa
+          efterlevnad av GDPR och säkerheten kring personlig data. Endast nödvändig data får samlas in och behandlas för
+          att uppfylla specifika syften. Företag är ansvariga för att visa efterlevnad av GDPR och säkerheten kring
+          personlig data. Privatliv och integritet måste integreras i alla databehandlings- och aktivitetersystem redan
+          från början.
+        </p>
+      </div>
+
+      <!-- Vilka rättigheter har användarna enligt GDPR? -->
+      <div class="container-xl p-0 m-auto two-columns mt-4 pb-3">
+        <h3 class="h1 pb-2 negative-margin">Vilka rättigheter har användarna enligt GDPR?</h3>
+        <p class="py-0 m-0">
+          Användare har rätt att få tillgång till sin personliga data och information om hur den används. Användare kan
+          begära att felaktig eller ofullständig information rättas till. Den så kallade "rätten att bli bortglömd" ger
+          användare möjlighet att begära att deras personliga data raderas. Användare har rätt att få sin personliga
+          data överförd till en annan tjänsteleverantör.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="container-fluid bg-dark py-2 py-md-5 m-0">
+    <div class="w-25 bg-primary m-auto rounded-5 pt-1"></div>
+  </div>
+
+  <!-- Andra viktiga lagar -->
+  <section class="container-fluid bg-dark px-3 px-sm-4 px-md-5 pb-4 pb-md-5 pt-5">
+    <div class="container-xl p-0 m-auto">
+      <!-- Andra viktiga lagar i Sverige -->
+      <div class="p-0 m-0 pb-5">
+        <h2 class="display-4 pb-5 m-0">Andra viktiga lagar i Sverige</h2>
+        <div class="row p-0 m-0">
+          <div class="col-12 col-md-6 p-0 m-0 pe-md-2">
+            <h3 class="pt-3 pt-md-0">Personuppgiftslagen</h3>
+            <p class="mb-md-5 p-0">
+              Personuppgiftslagen (PUL) är en lag som reglerar hur personuppgifter får samlas in, lagras, användas och
+              spridas. Användes innan GDPR.
+            </p>
+          </div>
+          <div class="col-12 col-md-6 p-0 m-0 ps-md-2 pb-3 pb-md-0">
+            <h3 class="pt-3 pt-md-0">Immaterialrättslagen</h3>
+            <p class="m-0 p-0">
+              Immaterialrättslagen (IML) skyddar rättigheterna för upphovsmän och företag som skapar immateriella
+              rättigheter såsom patent, varumärken och upphovsrätt.
+            </p>
+          </div>
+        </div>
+        <div class="row p-0 m-0 flex-md-row-reverse">
+          <div class="col-12 col-md-6 p-0 m-0 ps-md-2" style="height: 15rem">
+            <picture class="p-0 m-0 w-100">
+              <source media="(min-width: 450px)" srcset="../assets/images/wifi_lg.jpg">
+              <img class="p-0 rounded-4 m-0 w-100 fit-image" src="../assets/images/wifi_sm.jpg" alt="En skylt med WiFi">
+            </picture>
+          </div>
+          <div class="col-12 col-md-6 p-0 m-0 pe-md-2">
+            <h3 class="pt-3">Lagen om elektronisk kommunikation</h3>
+            <p class="m-0 p-0">
+              Lagen om elektronisk kommunikation reglerar elektronisk kommunikation, inklusive e-post, sms,
+              röstmeddelanden och sociala medier.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skillnader mellan GDPR och andra lagar -->
+      <div class="container-xl p-0 m-auto two-columns mt-4 mb-b pt-3 pb-5">
+        <h3 class="h1 pb-2 negative-margin">Skillnader mellan GDPR och andra lagar</h3>
+        <p class="py-0 m-0">
+          GDPR gäller för hela EU och påverkar alla organisationer som hanterar personlig data inom unionen, medan andra
+          lagar har mer specifika geografiska begränsningar. Även om de delar många gemensamma principer, ger vissa
+          lagar specifika rättigheter eller har särskilda krav som skiljer sig från GDPR. Straffavgifterna för att bryta
+          mot GDPR är betydande och kan vara mer kännbara än för andra lagar på nätet.
+        </p>
+      </div>
+
+      <!-- Konsekvenser av att inte följa GDPR och andra lagar -->
+      <div class="container-xl p-0 m-auto two-columns mt-4 mb-4">
+        <h3 class="h1 pb-2 negative-margin">Konsekvenser av att inte följa GDPR och andra lagar</h3>
+        <p class="py-0 m-0">
+          Företag kan ställas inför betydande böter och ekonomiska påföljder vid överträdelser av GDPR eller andra
+          relevanta lagar. Överträdelser kan leda till en förlust av förtroende och skada företagets varumärke och
+          anseende. Användare eller intressenter kan vidta rättsliga åtgärder om deras rättigheter kränks, vilket kan
+          resultera i långa juridiska processer och straffrättsliga påföljder.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="container-fluid bg-dark pt-2 py-md-5 m-0 pb-4">
+    <div class=" w-25 bg-primary m-auto rounded-5 pt-1 mb-3"></div>
+  </div>
+
+  <!-- Tips för att följa lagar på nätet -->
+  <section class="container-fluid bg-dark px-3 px-sm-4 px-md-5 pb-5 pt-5 mt-0">
+    <div class="container-xl p-0 m-auto">
+      <h2 class="display-4 pb-2 pb-md-4">Tips för att följa lagar på nätet</h2>
+      <p class="two-columns m-0">
+        Se till att ditt team är väl informerat om bestämmelserna och kraven enligt GDPR och andra tillämpliga lagar.
+        Använd kryptering, åtkomstkontroller och andra säkerhetsåtgärder för att skydda personlig data. Utarbeta och
+        håll er till en tydlig policy för insamling, lagring och användning av personlig data. Regelbunden granskning
+        och uppdatering av system och processer för att säkerställa efterlevnad av lagar och regler.
+      </p>
+    </div>
+  </section>
+
+  <!-- semi circle -->
+  <div class="container-fluid m-0 p-0 d-flex justify-content-center">
+    <div class="semi-circle container-xl p-0 m-0">
+      <img class="w-auto h-auto" src="../assets/icons/semi_circle_dark.svg" style="transform: scaleY(-1);" alt="">
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="container-fluid px-3 p-sm-4 p-md-5 py-5">
+    <div class="container-xl mb-5 p-0">
+      <h1 class="display-4 text-start mb-3 mb-md-4 mb-lg-5 mt-4">Hur bra koll har du på säkerhet på nätet?</h1>
+      <a href="quiz.html" class="btn btn-primary rounded-4 d-flex justify-content-center align-items-center">
+        <div class="font-bungee text-dark h1 m-0 px-3 py-3 py-lg-4">TESTA DIN KUNSKAP MED VÅRT QUIZ!</div>
+      </a>
+      <div class="row d-flex justify-content-between m-0 mt-3 mt-md-4 mt-lg-5 p-0">
+        <a href="../index.html"
+          class="home-button col-12 col-md-auto btn btn-primary rounded-4 p-3 d-flex justify-content-center align-items-center">
+          <img class="w-100 h-100" src="../assets/icons/home.svg" alt="Hem">
+        </a>
+        <p class="col-12 col-md-auto m-0 p-0 text-end pt-2 pt-sm-0">Den här hemsidan är skapad av<br><b>Arvid
+            Renestam</b></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
 </html>

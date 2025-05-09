@@ -1,143 +1,179 @@
 <!doctype html>
 <html lang="sv">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lagar & Säkerhet</title>
-    <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.svg">
-    <link rel="stylesheet" href="../styles/main.min.css">
-    <script defer src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="../styles/style.css">
-    <script defer src="../scripts/script.js"></script>
-    <style>
-      h1 {
-        max-width: 100%;
-      }
-    </style>
-  </head>
-  <body class="bg-secondary text-light">
-    <div id="blob"></div>
-    <div id="blob-blur"></div>
 
-    <!-- scroll to top button -->
-    <button onclick="scrollToTop()" id="exit-button" class="fade btn btn-secondary rounded-3 px-2 pb-2">
-      <img class="w-100 h-100" src="../assets/icons/up_arrow.svg" alt="Gå längst upp">
-    </button>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lagar & Säkerhet</title>
+  <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.svg">
+  <link rel="stylesheet" href="../styles/main.min.css">
+  <script defer src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="../styles/style.css">
+  <script defer src="../scripts/script.js"></script>
+  <style>
+    h1 {
+      max-width: 100%;
+    }
+  </style>
+</head>
 
-     <!-- navigation -->
-     <nav class="container-fluid px-3 px-sm-4 px-md-5 py-3">
-      <div class="container-xl bg-dark m-auto p-4 px-md-5 rounded-4 flex-wrap d-flex gap-4 justify-content-between">
-        <a href="../index.html" class="h4 m-0 fw-bold">Hem</a>
-        <a href="integritet.html" class="h4 m-0 fw-bold underline">Integritet</a>
-        <a href="lagar.html" class="h4 m-0 fw-bold">Lagar</a>
-        <a href="losenord.html" class="h4 m-0 fw-bold">Lösenord</a>
-        <a href="webbhotell.html" class="h4 m-0 fw-bold">Webbhotell</a>
-        <a href="tredjepartskod.html" class="h4 m-0 fw-bold">Tredjepartskod</a>
-        <a href="sakerhetshot.html" class="h4 m-0 fw-bold">Säkerhetshot</a>
-      </div>
-    </nav>
+<body class="bg-secondary text-light">
+  <div id="blob"></div>
+  <div id="blob-blur"></div>
 
-    <header class="container-fluid px-3 px-sm-4 px-md-5 py-5 m-0">
-        <div class="container-xl m-auto p-0">
-          <h1 class="display-1 p-0 m-0">När ska polisen få ta del av vår elektroniska kommunikation?</h1>
-        </div>
-    </header>
+  <!-- scroll to top button -->
+  <button onclick="scrollToTop()" id="exit-button" class="fade btn btn-secondary rounded-3 px-2 pb-2">
+    <img class="w-100 h-100" src="../assets/icons/up_arrow.svg" alt="Gå längst upp">
+  </button>
 
-    <!-- semi circle -->
-    <div class="container-fluid m-0 p-0 d-flex justify-content-center">
-      <div class="semi-circle container-xl p-0 m-0">
-        <img class="w-auto h-auto" src="../assets/icons/semi_circle_dark.svg" alt="">
-      </div>
+  <!-- navigation -->
+  <nav class="container-fluid px-3 px-sm-4 px-md-5 py-3">
+    <div class="container-xl bg-dark m-auto p-4 px-md-5 rounded-4 flex-wrap d-flex gap-4 justify-content-between">
+      <a href="../index.html" class="h4 m-0 fw-bold">Hem</a>
+      <a href="integritet.html" class="h4 m-0 fw-bold underline">Integritet</a>
+      <a href="lagar.html" class="h4 m-0 fw-bold">Lagar</a>
+      <a href="losenord.html" class="h4 m-0 fw-bold">Lösenord</a>
+      <a href="webbhotell.html" class="h4 m-0 fw-bold">Webbhotell</a>
+      <a href="tredjepartskod.html" class="h4 m-0 fw-bold">Tredjepartskod</a>
+      <a href="sakerhetshot.html" class="h4 m-0 fw-bold">Säkerhetshot</a>
     </div>
-    
-    <section class="container-fluid bg-dark px-3 px-sm-4 px-md-5 pb-4 pb-lg-5 pt-5">
-      <div class="container-xl p-0 m-auto two-columns mt-4 mb-4">
-        <h2 class="display-5 pb-3 negative-margin">Bakgrund</h2>
-        <p class="py-0 m-0 pb-3">
-          Kriminalitet och organiserad brottslighet är ett ämne som jämt dyker upp i olika debatter. Självfallet bör vi göra allt i vår makt för att stoppa dessa aktiviteter &ndash; eller? Precis som allt annat idag är brottsligheten djupt integrerad i den teknologiska utvecklingen och den elektroniska kommunikationen. För att bekämpa brott borde väl då ändå polisen få tillgång till sökhistorik, konversationer och övrig digital aktivitet som har med saken att göra? Det är trots allt möjligt att få tillgång till en stor del av just dessa data. Och visst är det inte fel när det görs i ett gott syfte?
-        </p>
-        <p class="p-0 m-0">
-          Samtidigt står det klart för mig att folk starkt värdesätter sin integritet. Det finns folk som hade offrat en hel del för att få sin sökhistorik att förbli privat, till exempel. Alla har i alla fall rätt till ett privatliv, till att komma hem och vara för sig själv utan att andra glor på. Samma gäller då också för vår aktivitet på nätet. Personligen är jag verkligen inte intresserad av att staten har koll på allt jag gör på internet &ndash; ännu mindre, att den informationen offentliggörs. Jag föreställer mig offentliga rättegångar där elektronisk kommunikation tas fram som viktigt bevismaterial. Helt plötsligt ställs vi alla inför en risk av att få vår personliga data exponerad, och vad händer då med vår integritet?
-        </p>
-      </div>
-    </section>
+  </nav>
 
-    <div class="container-fluid bg-dark py-2 py-md-4 m-0">
-      <div class="w-25 bg-primary m-auto rounded-5 pt-1"></div>
+  <header class="container-fluid px-3 px-sm-4 px-md-5 py-5 m-0">
+    <div class="container-xl m-auto p-0">
+      <h1 class="display-1 p-0 m-0">När ska polisen få ta del av vår elektroniska kommunikation?</h1>
     </div>
+  </header>
 
-    <section class="container-fluid bg-dark px-3 px-sm-4 px-md-5 pb-4 pb-lg-5 pt-5">
-      <div class="container-xl p-0 m-auto two-columns mt-4 mb-4">
-        <h2 class="display-5 pb-3 negative-margin">Hur det ser ut idag</h2>
-        <p class="py-0 m-0 pb-3">
-          Låt oss se över hur det ser ut i nuläget. Det är nämligen så att polisen redan har rätt till en del information. Kanske inte om de misstänker att någon kommer att snatta från en butik, men definitivt när det gäller grövre lagbrott. Den kanske tydligaste lagen för det här kallas Hemlig avlyssning av elektronisk kommunikation. Enligt 1 kap. 7 § lag om ändring i rättegångsbalken (2023:534) beskrivs att övervakningen får ske om någon är skäligen misstänkt för ett brott som är av synnerlig vikt för utredningen, som berör ett brott för vilket det inte är föreskrivet lindrigare straff än fängelse i två år.
-        </p>
-        <p class="p-0 m-0">
-          Jag anser att vi har funnit en sorts balans mellan brottsbekämpningen och folkets integritet. Det stora bekymret är att det är en så pass subjektiv fråga. Att sätta en gräns kopplad till de lagar och straff som vi redan har bestämt känns som en bra lösning. Att man behöver ansöka om ett tillstånd gör det hela lite mer komplext vilket kan löna vår integritet i vissa fall. Saker blir lättare fel när det går för snabbt.
-        </p>
-      </div>
-    </section>
-
-    <div class="container-fluid bg-dark pt-2 pb-4 pt-md-4 pb-md-5 m-0">
-      <div class="w-25 bg-primary m-auto rounded-5 pt-1"></div>
+  <!-- semi circle -->
+  <div class="container-fluid m-0 p-0 d-flex justify-content-center">
+    <div class="semi-circle container-xl p-0 m-0">
+      <img class="w-auto h-auto" src="../assets/icons/semi_circle_dark.svg" alt="">
     </div>
+  </div>
 
-    <section class="container-fluid bg-dark px-3 px-sm-4 px-md-5 pb-5 pt-5">
-      <div class="row container-xl p-0 m-auto d-flex flex-column-reverses flex-lg-columns">
-        <div class="col-12 col-lg-6 p-0 m-0 pb-lg-0 pb-4 pe-lg-4">
-          <h2 class="display-5 pb-3">Fördelar med statlig kontroll</h2>
-          <p class="m-0 p-0">
-            Det är värt att tänka sig fördelarna med att kunna använda sig av elektronisk avlyssning i fler sammanhang. Hade vårt samhälle blivit en säkrare och fridfullare plats? Polisen lär ju definitivt kunna stoppa fler brott, många innan de ens begås. Det är alltså möjligt att en ökad statlig kontroll hade kunnat löna oss, både som samhälle och individer. Det är definitivt en väldigt politisk fråga. Sverige är ett demokratiskt, fritt land som inte kontrollerar våra möjligheter i livet. När jag säger det har jag länder som exempelvis Kina i åtanke. Landets regering har full kontroll över vad som sker och inte får ske på nätet. Staten kan begränsa och till och med förbjuda tillgång till olika webbplatser, och så vidare. Är det verkligen dit vi vill bege oss?
-          </p>
-        </div>
-        <picture class="col-12 col-lg-6 p-0 m-0 mb-3 pb-lg-5">
-          <source media="(min-width: 1200px)" srcset="../assets/images/city_lg.jpg">
-          <source media="(min-width: 992px)" srcset="../assets/images/city_sm.jpg">
-          <source media="(min-width: 768px)" srcset="../assets/images/city_lg.jpg">
-          <source media="(min-width: 576px)" srcset="../assets/images/city_md.jpg">
-          <img class="p-0 m-0 rounded-4 fit-image" src="../assets/images/city_sm.jpg" alt="En stad med många olika ljuskällor">
-        </picture>
-      </div>
-    </section>
-
-    <div class="container-fluid bg-dark pb-2 pt-3 pb-md-4 pt-md-5 m-0">
-      <div class="w-25 bg-primary m-auto rounded-5 pt-1"></div>
+  <section class="container-fluid bg-dark px-3 px-sm-4 px-md-5 pb-4 pb-lg-5 pt-5">
+    <div class="container-xl p-0 m-auto two-columns mt-4 mb-4">
+      <h2 class="display-5 pb-3 negative-margin">Bakgrund</h2>
+      <p class="py-0 m-0 pb-3">
+        Kriminalitet och organiserad brottslighet är ett ämne som jämt dyker upp i olika debatter. Självfallet bör vi
+        göra allt i vår makt för att stoppa dessa aktiviteter &ndash; eller? Precis som allt annat idag är
+        brottsligheten djupt integrerad i den teknologiska utvecklingen och den elektroniska kommunikationen. För att
+        bekämpa brott borde väl då ändå polisen få tillgång till sökhistorik, konversationer och övrig digital aktivitet
+        som har med saken att göra? Det är trots allt möjligt att få tillgång till en stor del av just dessa data. Och
+        visst är det inte fel när det görs i ett gott syfte?
+      </p>
+      <p class="p-0 m-0">
+        Samtidigt står det klart för mig att folk starkt värdesätter sin integritet. Det finns folk som hade offrat en
+        hel del för att få sin sökhistorik att förbli privat, till exempel. Alla har i alla fall rätt till ett
+        privatliv, till att komma hem och vara för sig själv utan att andra glor på. Samma gäller då också för vår
+        aktivitet på nätet. Personligen är jag verkligen inte intresserad av att staten har koll på allt jag gör på
+        internet &ndash; ännu mindre, att den informationen offentliggörs. Jag föreställer mig offentliga rättegångar
+        där elektronisk kommunikation tas fram som viktigt bevismaterial. Helt plötsligt ställs vi alla inför en risk av
+        att få vår personliga data exponerad, och vad händer då med vår integritet?
+      </p>
     </div>
+  </section>
 
-    <section class="container-fluid bg-dark px-3 px-sm-4 px-md-5 pb-4 pt-5">
-      <div class="container-xl p-0 m-auto two-columns mt-4 mb-5">
-        <h2 class="display-4 pb-3">Slutsats</h2>
-        <p class="m-0 p-0 pb-3">
-          Jag tycker att lagen är utformad på ett rimligt sätt, så som den ser ut idag, och den tar hänsyn till många olika faktorer som jag har tagit upp. Kanske är det åt det liberala hållet att försöka begränsa den statliga kontrollen, men då är det den ställningen jag tar i frågan. Samtidigt är det bra att polisen kan få tillåtelse att övervaka elektronik vid grövre brott. Jag tycker i alla fall att folkets integritet bör prioriteras.
-        </p>
-        <p class="p-0 m-0">
-          Jag vill avsluta med att säga att det här är en fråga som endast kommer att bli mer relevant i framtiden. Det kommer att behöva fortsätta undersökas allt eftersom teknologin utvecklas, och det ska bli spännande att se hur ny utrustning påverkar polisens arbete framöver.
-        </p>
-      </div>
-    </section>
-    
-    <!-- semi circle -->
-    <div class="container-fluid m-0 p-0 d-flex justify-content-center">
-      <div class="semi-circle container-xl p-0 m-0">
-        <img class="w-auto h-auto" src="../assets/icons/semi_circle_dark.svg" style="transform: scaleY(-1);" alt="">
-      </div>
+  <div class="container-fluid bg-dark py-2 py-md-4 m-0">
+    <div class="w-25 bg-primary m-auto rounded-5 pt-1"></div>
+  </div>
+
+  <section class="container-fluid bg-dark px-3 px-sm-4 px-md-5 pb-4 pb-lg-5 pt-5">
+    <div class="container-xl p-0 m-auto two-columns mt-4 mb-4">
+      <h2 class="display-5 pb-3 negative-margin">Hur det ser ut idag</h2>
+      <p class="py-0 m-0 pb-3">
+        Låt oss se över hur det ser ut i nuläget. Det är nämligen så att polisen redan har rätt till en del information.
+        Kanske inte om de misstänker att någon kommer att snatta från en butik, men definitivt när det gäller grövre
+        lagbrott. Den kanske tydligaste lagen för det här kallas Hemlig avlyssning av elektronisk kommunikation. Enligt
+        1 kap. 7 § lag om ändring i rättegångsbalken (2023:534) beskrivs att övervakningen får ske om någon är skäligen
+        misstänkt för ett brott som är av synnerlig vikt för utredningen, som berör ett brott för vilket det inte är
+        föreskrivet lindrigare straff än fängelse i två år.
+      </p>
+      <p class="p-0 m-0">
+        Jag anser att vi har funnit en sorts balans mellan brottsbekämpningen och folkets integritet. Det stora bekymret
+        är att det är en så pass subjektiv fråga. Att sätta en gräns kopplad till de lagar och straff som vi redan har
+        bestämt känns som en bra lösning. Att man behöver ansöka om ett tillstånd gör det hela lite mer komplext vilket
+        kan löna vår integritet i vissa fall. Saker blir lättare fel när det går för snabbt.
+      </p>
     </div>
+  </section>
 
-    <!-- footer -->
-    <footer class="container-fluid px-3 p-sm-4 p-md-5 py-5">
-      <div class="container-xl mb-5 p-0">
-        <h1 class="display-4 text-start mb-3 mb-md-4 mb-lg-5 mt-4">Hur bra koll har du  på säkerhet på nätet?</h1>
-        <a href="../html/quiz.html" class="btn btn-primary rounded-4 d-flex justify-content-center align-items-center">
-          <div class="font-bungee text-dark h1 m-0 px-3 py-3 py-lg-4">TESTA DIN KUNSKAP MED VÅRT QUIZ!</div> 
+  <div class="container-fluid bg-dark pt-2 pb-4 pt-md-4 pb-md-5 m-0">
+    <div class="w-25 bg-primary m-auto rounded-5 pt-1"></div>
+  </div>
+
+  <section class="container-fluid bg-dark px-3 px-sm-4 px-md-5 pb-5 pt-5">
+    <div class="row container-xl p-0 m-auto d-flex flex-column-reverses flex-lg-columns">
+      <div class="col-12 col-lg-6 p-0 m-0 pb-lg-0 pb-4 pe-lg-4">
+        <h2 class="display-5 pb-3">Fördelar med statlig kontroll</h2>
+        <p class="m-0 p-0">
+          Det är värt att tänka sig fördelarna med att kunna använda sig av elektronisk avlyssning i fler sammanhang.
+          Hade vårt samhälle blivit en säkrare och fridfullare plats? Polisen lär ju definitivt kunna stoppa fler brott,
+          många innan de ens begås. Det är alltså möjligt att en ökad statlig kontroll hade kunnat löna oss, både som
+          samhälle och individer. Det är definitivt en väldigt politisk fråga. Sverige är ett demokratiskt, fritt land
+          som inte kontrollerar våra möjligheter i livet. När jag säger det har jag länder som exempelvis Kina i åtanke.
+          Landets regering har full kontroll över vad som sker och inte får ske på nätet. Staten kan begränsa och till
+          och med förbjuda tillgång till olika webbplatser, och så vidare. Är det verkligen dit vi vill bege oss?
+        </p>
+      </div>
+      <picture class="col-12 col-lg-6 p-0 m-0 mb-3 pb-lg-5">
+        <source media="(min-width: 1200px)" srcset="../assets/images/city_lg.jpg">
+        <source media="(min-width: 992px)" srcset="../assets/images/city_sm.jpg">
+        <source media="(min-width: 768px)" srcset="../assets/images/city_lg.jpg">
+        <source media="(min-width: 576px)" srcset="../assets/images/city_md.jpg">
+        <img class="p-0 m-0 rounded-4 fit-image" src="../assets/images/city_sm.jpg"
+          alt="En stad med många olika ljuskällor">
+      </picture>
+    </div>
+  </section>
+
+  <div class="container-fluid bg-dark pb-2 pt-3 pb-md-4 pt-md-5 m-0">
+    <div class="w-25 bg-primary m-auto rounded-5 pt-1"></div>
+  </div>
+
+  <section class="container-fluid bg-dark px-3 px-sm-4 px-md-5 pb-4 pt-5">
+    <div class="container-xl p-0 m-auto two-columns mt-4 mb-5">
+      <h2 class="display-4 pb-3">Slutsats</h2>
+      <p class="m-0 p-0 pb-3">
+        Jag tycker att lagen är utformad på ett rimligt sätt, så som den ser ut idag, och den tar hänsyn till många
+        olika faktorer som jag har tagit upp. Kanske är det åt det liberala hållet att försöka begränsa den statliga
+        kontrollen, men då är det den ställningen jag tar i frågan. Samtidigt är det bra att polisen kan få tillåtelse
+        att övervaka elektronik vid grövre brott. Jag tycker i alla fall att folkets integritet bör prioriteras.
+      </p>
+      <p class="p-0 m-0">
+        Jag vill avsluta med att säga att det här är en fråga som endast kommer att bli mer relevant i framtiden. Det
+        kommer att behöva fortsätta undersökas allt eftersom teknologin utvecklas, och det ska bli spännande att se hur
+        ny utrustning påverkar polisens arbete framöver.
+      </p>
+    </div>
+  </section>
+
+  <!-- semi circle -->
+  <div class="container-fluid m-0 p-0 d-flex justify-content-center">
+    <div class="semi-circle container-xl p-0 m-0">
+      <img class="w-auto h-auto" src="../assets/icons/semi_circle_dark.svg" style="transform: scaleY(-1);" alt="">
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="container-fluid px-3 p-sm-4 p-md-5 py-5">
+    <div class="container-xl mb-5 p-0">
+      <h1 class="display-4 text-start mb-3 mb-md-4 mb-lg-5 mt-4">Hur bra koll har du på säkerhet på nätet?</h1>
+      <a href="quiz.html" class="btn btn-primary rounded-4 d-flex justify-content-center align-items-center">
+        <div class="font-bungee text-dark h1 m-0 px-3 py-3 py-lg-4">TESTA DIN KUNSKAP MED VÅRT QUIZ!</div>
+      </a>
+      <div class="row d-flex justify-content-between m-0 mt-3 mt-md-4 mt-lg-5 p-0">
+        <a href="../index.html"
+          class="home-button col-12 col-md-auto btn btn-primary rounded-4 p-3 d-flex justify-content-center align-items-center">
+          <img class="w-100 h-100" src="../assets/icons/home.svg" alt="Hem">
         </a>
-        <div class="row d-flex justify-content-between m-0 mt-3 mt-md-4 mt-lg-5 p-0">
-          <a href="../index.html" class="home-button col-12 col-md-auto btn btn-primary rounded-4 p-3 d-flex justify-content-center align-items-center">
-            <img class="w-100 h-100" src="../assets/icons/home.svg" alt="Hem">
-          </a>
-          <p class="col-12 col-md-auto m-0 p-0 text-end pt-2 pt-sm-0">Den här hemsidan är skapad av<br><b>Arvid Renestam</b></p>
-        </div>
+        <p class="col-12 col-md-auto m-0 p-0 text-end pt-2 pt-sm-0">Den här hemsidan är skapad av<br><b>Arvid
+            Renestam</b></p>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-  </body>
+</body>
+
 </html>
