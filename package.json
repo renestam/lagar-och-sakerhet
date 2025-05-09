@@ -1,14 +1,25 @@
 {
-  "name": "projekt_4",
+  "name": "lagar-och-sakerhet",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "if exist dist (rmdir /s /q dist) else mkdir dist",
+
+    "copy:html": "copyfiles index.html pages/**/*.html dist/",
+    "copy:styles": "copyfiles -u 1 styles/**/* dist/styles/",
+    "copy:assets": "copyfiles -u 1 assets/**/* dist/assets/",
+    "copy:scripts": "copyfiles -u 1 scripts/* dist/scripts/",
+
+    "build": "npm-run-all --silent clean copy:*"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
     "bootstrap": "^5.3.3"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "npm-run-all": "^4.1.5"
   }
 }
